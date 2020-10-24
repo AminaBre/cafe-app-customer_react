@@ -1,0 +1,117 @@
+/* Everything */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cursive Font */
+.font-cursive {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Header */
+
+#header-container {
+    background-color: chocolate;
+    margin: 0;
+    padding: 0 0.5rem;
+    height: 5rem;
+}
+
+#header-title {
+    margin: 0;
+    position: absolute;
+    top: 0.5rem;
+}
+
+#hamburger-icon {
+    width: 5rem;
+    position: absolute;
+    right: -0.5rem;
+    top: 0;
+}
+
+/* Front Page */
+
+#front-page-container {
+    display: grid;
+}
+
+.frontpage-div {
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+/* Main Menu */
+
+.menu-section-button {
+    width: 28%;
+    padding: 0.5rem;
+    margin: 1rem 0.2rem;
+    font-weight: bold;
+}
+
+.active-button {
+    box-shadow: 0 0 8px green;
+}
+
+.menu-item-container {
+    border: 1px solid black;
+}
+
+/* Beverage | Dessert */
+
+.menu-item-box-beverage {
+    height: 7rem;
+    position: relative;
+    border: 1px solid black;
+    margin: 0.5rem;
+}
+
+.menu-item-box-dessert {
+    height: 5rem;
+    position: relative;
+    border: 1px solid black;
+    margin: 0.5rem;
+}
+
+.menu-item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.size-button-container {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.size-button {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.price-div-beverage {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 3.5rem;
+}
+
+.price-div-dessert {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 1.5rem;
+}
