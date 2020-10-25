@@ -1,108 +1,228 @@
 const warmBeverages = [
     {
-        id: 8,
-        name: ['Filterkaffe (liten)', 'Filterkaffe (medium)', 'Filterkaffe (stor)'],
-        price: [28, 32, 36],
+        id: "Filterkaffe",
+        size: [
+            {
+                name: "Filterkaffe (liten)",
+                price: 28
+            },
+            {
+                name: "Filterkaffe (medium)",
+                price: 32
+            },
+            {
+                name: "Filterkaffe (stor)",
+                price: 36
+            }
+        ],
         img: ''
     },
     {
-        id: 9,
-        name: ['Cappuccino (liten)', 'Cappuccino (medium)', 'Cappuccino (stor)'],
-        price: [38, 42, 46],
+        id: "Cappuccino",
+        size: [
+            {
+                name: "Cappuccino (liten)",
+                price: 38
+            },
+            {
+                name: "Cappuccino (medium)",
+                price: 42
+            },
+            {
+                name: "Cappuccino (stor)",
+                price: 46
+            }
+        ],
         img: ''
     },
     {
-        id: 10,
-        name: ['Americano (liten)', 'Americano (medium)', 'Americano (stor)'],
-        price: [32, 36, 40],
+        id: "Americano",
+        size: [
+            {
+                name: "Americano (liten)",
+                price: 32
+            },
+            {
+                name: "Americano (medium)",
+                price: 36
+            },
+            {
+                name: "Americano (stor)",
+                price: 40
+            }
+        ],
         img: ''
     },
     {
-        id: 11,
-        name: ['Kaffe Mocha (liten)', 'Kaffe Mocha (medium)', 'Kaffe Mocha (stor)'],
-        price: [38, 42, 46],
+        id: "Kaffe Mocha",
+        size: [
+            {
+                name: "Kaffe Mocha (liten)",
+                price: 38
+            },
+            {
+                name: "Kaffe Mocha (medium)",
+                price: 42
+            },
+            {
+                name: "Kaffe Mocha (stor)",
+                price: 46
+            }
+        ],
         img: ''
     },
     {
-        id: 12,
-        name: ['Kaffe Latte (liten)', 'Kaffe Latte (medium)', 'Kaffe Latte (stor)'],
-        price: [38, 44, 48],
+        id: "Kaffe Latte",
+        size: [
+            {
+                name: "Kaffe Latte (liten)",
+                price: 38
+            },
+            {
+                name: "Kaffe Latte (medium)",
+                price: 44
+            },
+            {
+                name: "Kaffe Latte (stor)",
+                price: 48
+            }
+        ],
         img: ''
     },
     {
-        id: 13,
-        name: ['Caramel Macchiato (liten)', 'Caramel Macchiato (medium)', 'Caramel Macchiato (stor)'],
-        price: [45, 48, 51],
+        id: "Caramel Macchiato",
+        size: [
+            {
+                name: "Caramel Macchiato (liten)",
+                price: 45
+            },
+            {
+                name: "Caramel Macchiato (medium)",
+                price: 48
+            },
+            {
+                name: "Caramel Macchiato (stor)",
+                price: 51
+            }
+        ],
         img: ''
     },
     {
-        id: 14,
-        name: ['Espresso (liten)', 'Espresso (medium)', 'Espresso (stor)'],
-        price: [34, 38, 42],
+        id: "Espresso",
+        size: [
+            {
+                name: "Espresso (liten)",
+                price: 34
+            },
+            {
+                name: "Espresso (medium)",
+                price: 38
+            },
+            {
+                name: "Espresso (stor)",
+                price: 42
+            }
+        ],
         img: ''
     },
     {
-        id: 15,
-        name: ['Cortado (liten)', 'Cortado (medium)', 'Cortado (stor)'],
-        price: [36, 40, 44],
+        id: "Cortado",
+        size: [
+            {
+                name: "Cortado (liten)",
+                price: 36
+            },
+            {
+                name: "Cortado (medium)",
+                price: 40
+            },
+            {
+                name: "Cortado (stor)",
+                price: 44
+            }
+        ],
         img: ''
     }
 ];
 
 const coldBeverages = [
     {
-        id: 16,
-        name: ['Iskaffe (liten)', 'Iskaffe (medium)', 'Iskaffe (stor)'],
-        price: [36, 42, 50],
+        id: "Iskaffe",
+        size: [
+            {
+                name: "Iskaffe (liten)",
+                price: 36
+            },
+            {
+                name: "Iskaffe (medium)",
+                price: 42
+            },
+            {
+                name: "Iskaffe (stor)",
+                price: 50
+            }
+        ],
         img: ''
     },
     {
-        id: 17,
-        name: ['Iste (liten)', 'Iste (medium)', 'Iste (stor)'],
-        price: [38 , 47, 55],
+        id: "Iste",
+        size: [
+            {
+                name: "Iste (liten)",
+                price: 38
+            },
+            {
+                name: "Iste (medium)",
+                price: 47
+            },
+            {
+                name: "Iste (stor)",
+                price: 55
+            }
+        ],
         img: ''
     }
 ];
 
 const desserts = [
     {
-        id: 1,
+        id: "Brownies",
         name: 'Brownies',
         price: 44,
         img: '',
     },
     {
-        id: 2,
+        id: "Oreokake",
         name: 'Oreokake',
         price: 54,
         img: '',
     },
     {
-        id: 3,
+        id: "Kanelbolle",
         name: 'Kanelbolle',
         price: 46,
         img: '',
     },
     {
-        id: 4,
+        id: "Croissant",
         name: 'Croissant',
         price: 38,
         img: '',
     },
     {
-        id: 5,
+        id: "Chiapudding",
         name: 'Chiapudding',
         price: 42,
         img: '',
     },
     {
-        id: 6,
+        id: "Brioche",
         name: 'Brioche',
         price: 44,
         img: '',
     },
     {
-        id: 7,
+        id: "Scones",
         name: 'Scones',
         price: 37,
         img: '',

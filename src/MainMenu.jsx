@@ -22,15 +22,15 @@ const MainMenu = () => {
             setMenuItems(warmBeverages.map(warmBeverage => // "warmBeverages" er arrayet fra productLists.js-fila. Én Beverage-komponent lages per objekt i arrayet, og alle lagres i "menuItems" med setState.
                 <Beverage   // Se Beverage.jsx for å se hvordan komponenten bygges
                     key={warmBeverage.id}
-                    name={warmBeverage.name[0]}
-                    price={warmBeverage.price[0]}
+                    name={warmBeverage.size[0].name}
+                    price={warmBeverage.size[0].price}
                 />))
         } else if (menuSection === menuSectionNames[1]) { // Dersom man har trykket på "Kalde drikker"...
             setMenuItems(coldBeverages.map(coldBeverage => 
                 <Beverage 
                     key={coldBeverage.id}
-                    name={coldBeverage.name[0]}
-                    price={coldBeverage.price[0]}
+                    name={coldBeverage.size[0].name}
+                    price={coldBeverage.size[0].price}
                 />))
         } else if (menuSection === menuSectionNames[2]) {
             setMenuItems(desserts.map(dessert => 
