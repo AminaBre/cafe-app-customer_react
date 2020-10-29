@@ -75,9 +75,16 @@ h1 {
   z-index: 10;
   bottom: 0;
   width: 100%;
-  height: 6rem;
+  height: 6rem; 
   background-color: rgb(47, 68, 136);
   box-shadow: 0 0 8px rgb(72, 96, 172);
+
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 #total-price-text-div {

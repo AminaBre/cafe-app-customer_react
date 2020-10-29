@@ -35,7 +35,7 @@ const MainMenu = () => {
     <>
       <MenuSelection />
       {getArea()}
-      <PricePreView totalPrice={1} />
+      <PricePreView totalPrice={totalPrice} />
     </>
   );
 };

@@ -25,7 +25,7 @@ export const PricePreView = (props) => {
 
   return (
     <>
-      {props.totalPrice > 0 && (
+      {totalPrice > 0 && (
         <div id='total-price-div'>
           <div id='total-price-text-div'>
             Totalpris: <b>{totalPrice} kr</b>
