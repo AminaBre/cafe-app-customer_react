@@ -1,0 +1,171 @@
+/* Everything */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Cursive Font */
+.font-cursive {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Header */
+
+#header-container {
+  background-color: rgb(216, 208, 198);
+  margin: 0;
+  padding: 0 0.5rem;
+  height: 5rem;
+}
+
+#header-title {
+  margin: 0;
+  position: absolute;
+  top: 0.5rem;
+}
+
+#hamburger-icon {
+  width: 5rem;
+  position: absolute;
+  right: -0.5rem;
+  top: 0;
+}
+
+/* Front Page */
+
+#front-page-container {
+  display: grid;
+}
+
+.frontpage-div {
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+/* Main Menu */
+
+.menu-section-button {
+  width: 28%;
+  padding: 0.5rem;
+  margin: 1rem 0.2rem;
+  font-weight: bold;
+}
+
+.active-button {
+  box-shadow: 0 0 8px green;
+}
+
+.menu-item-container {
+  padding: 0.2rem 0;
+  background-color: rgb(82, 64, 43);
+}
+
+#total-price-div {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(47, 68, 136);
+  box-shadow: 0 0 8px rgb(72, 96, 172);
+}
+
+#total-price-text-div {
+  font-weight: 300;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 0.8rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#go-to-shopping-cart-button {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  height: 3rem;
+  width: 7rem;
+}
+
+#shopping-cart-done-img {
+  height: 2rem;
+}
+
+/* Beverage | Dessert */
+
+.menu-item-box-beverage {
+  background-color: rgb(216, 208, 198);
+  height: 7rem;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.menu-item-box-dessert {
+  background-color: rgb(216, 208, 198);
+  height: 5rem;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+.menu-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.size-button-container {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.size-button {
+  height: 2rem;
+  width: 4rem;
+  margin-right: 0.1rem;
+}
+
+.price-div-beverage {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 3.5rem;
+}
+
+.price-div-dessert {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 1.5rem;
+}
+
+.add-to-cart-button {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.add-to-cart-button button {
+  width: 4rem;
+  height: 2.5rem;
+}
+.button {
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 1px;
+  cursor: pointer;
+}
