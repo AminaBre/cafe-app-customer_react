@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../../Styles/styles.css';
 import { VarmDrikke } from '../Menu/Components/VarmDrikke';
@@ -21,8 +21,17 @@ const MainMenu = () => {
   const getArea = () => {
   };
 
+  const handleKurv = () => {
+    return handleKurv.map((
+      orderItem 
+    ) => (
+    <div className="order-output">{orderItem}</div>
+    ));
+  };
+
   return (
     <>
+      <div>{handleKurv}</div>
       <h3>Welcome to Kafè Judas - Choose a menu</h3>
       <div id="Front-page-menu-choice-container">
         <MenuSelection/>
