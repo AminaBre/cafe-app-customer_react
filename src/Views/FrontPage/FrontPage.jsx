@@ -22,7 +22,7 @@ const MainMenu = () => {
   };
 
   const handleKurv = () => {
-    return handleKurv.map((
+    return HandleKurv.map((
       orderItem 
     ) => (
     <div className="order-output">{orderItem}</div>

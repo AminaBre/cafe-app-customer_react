@@ -12,17 +12,18 @@ const Beverage = (props) => {
   };
 
   const addToBasket = (item) => {
+    console.log("item:", item);
     const nrOrderedOf = getNrOrderOf(item);
     handleKurv.setProducts((prevstate) => {
       return {
-        ...prevstate,
-        [props.type.id]: {
-          ...prevstate[props.type.id],
-          [item.storlek]: {
-            antal: nrOrderedOf + 1,
-            price: item.price,
+         ...prevstate,
+          [props.type.id]: {
+            ...prevstate[props.type.id],
+            [item.storlek]: {
+              antal: nrOrderedOf + 1,
+              price: item.price
+            },
           },
-        },
       };
     });
   };
