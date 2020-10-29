@@ -23,11 +23,12 @@ const MainMenu = () => {
 
   return (
     <>
-      <h3>Welcome to Kafè Judas - Select a menu</h3>
+      <h3>Welcome to Kafè Judas - Choose a menu</h3>
       <div id="Front-page-menu-choice-container">
         <MenuSelection/>
       </div>
       {getArea()}
+      <PricePreView totalPrice={totalPrice} />
     </>
   );
 };
