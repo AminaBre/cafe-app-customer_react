@@ -10,13 +10,13 @@ export const Shoppingcart = (props) => {
       <div>
         {Object.keys(handleKurv.products).map((product) => {
           console.log("Vara:  " + product);
-          Object.keys(handleKurv.products[product]).map((size) => {
+          return Object.keys(handleKurv.products[product]).map((size) => {
             console.log("Storlek:  " + size);
             const amount = handleKurv.products[product][size].antal;
             const aPrice = handleKurv.products[product][size].price;
             console.log("Antal:  " + amount);
             console.log("Pris:  " + aPrice);
-            return <div className="shopping-cart-output">Du har beställt + {(amount, aPrice)}</div>;
+            return <div className="shopping-cart-output">Du har beställt {(amount, aPrice)}</div>;
           });
         })}
       </div>
