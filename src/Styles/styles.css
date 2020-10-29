@@ -9,6 +9,11 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+#root{
+
+
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -26,6 +31,7 @@ h1 {
   margin: 0;
   padding: 0 0.5rem;
   height: 5rem;
+  order: 1;
 }
 
 #header-title {
@@ -104,9 +110,9 @@ h1 {
 /* Beverage | Dessert */
 
 .menu-item-box-beverage {
+
   background-color: rgb(216, 208, 198);
   height: 7rem;
-  position: relative;
   border: 1px solid black;
   border-radius: 5px;
   margin: 0.5rem;
