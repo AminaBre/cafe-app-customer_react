@@ -17,13 +17,13 @@ const MainApp = (props) => {
           </h1>
           <img id='hamburger-icon' src='assets/hamburger-icon.png' />
         </header>
-        <Link to='/MainMenu'>Main Menu</Link>
         <Link to='/FrontPage/FrontPage'>Front Page</Link>
+        <Link to='/MainMenu'>Main Menu</Link>
 
         <Switch>
           <Route exact path='/MainMenu/:area?' component={MainMenu} />
           {/* <Route exact path='/Varukorg/' component={Varukorg} /> */}
-          <Route exact path='/FrontPage/FrontPage' component={FrontPage} />
+          <Route component={FrontPage} />
         </Switch>
       </HandleKurv.Provider>
     </Router>
