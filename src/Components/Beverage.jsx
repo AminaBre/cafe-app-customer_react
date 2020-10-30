@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react';
+
 import { HandleKurv } from '../Model/handleKurv';
+import '../Styles/styles.css';
 
 const Beverage = (props) => {
   const handleKurv = useContext(HandleKurv);
@@ -51,26 +53,26 @@ const Beverage = (props) => {
       <div className='menu-item-title'>{props.type.id}</div>
       {props.type.size.map((item) => {
         return (
-          <div>
-            <span
+          <div className="size-buttons-container">
+            <span 
               onClick={() => {
                 removeFromBasket(item);
               }}
-              className={'button'}
+              className={'button minus-button'}
             >
               -
             </span>
             <span>{getNrOrderOf(item)}</span>
-            <span
+            <span 
               onClick={() => {
                 addToBasket(item);
               }}
-              className={'button'}
+              className={'button plus-button'}
             >
               +
             </span>
             <span>
-              {item.storlek} {item.price}kr
+              {item.storlek}: {item.price} kr,-
             </span>
           </div>
         );

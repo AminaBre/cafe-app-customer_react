@@ -193,44 +193,72 @@ const coldBeverages = [
 const desserts = [
   {
     id: 'Brownies',
-    name: 'Brownies',
-    price: 44,
+    size: [
+      {
+        name: 'Brownies',
+        price: 44,
+      }
+    ],
     img: '',
   },
   {
     id: 'Oreokake',
-    name: 'Oreokake',
-    price: 54,
+    size: [
+      {
+        name: 'Oreokake',
+        price: 54,
+      }
+    ],
     img: '',
   },
   {
     id: 'Kanelbolle',
-    name: 'Kanelbolle',
-    price: 46,
+    size: [
+      {
+        name: 'Kanelbolle',
+        price: 46,
+      }
+    ],
     img: '',
   },
   {
     id: 'Croissant',
-    name: 'Croissant',
-    price: 38,
+    size: [
+      {
+        name: 'Croissant',
+        price: 38,
+      }
+    ],
     img: '',
   },
   {
     id: 'Chiapudding',
-    name: 'Chiapudding',
-    price: 42,
+    size: [
+      {
+        name: 'Chiapudding',
+        price: 42,
+      }
+    ],
     img: '',
   },
   {
     id: 'Brioche',
-    name: 'Brioche',
-    price: 44,
+    size: [
+      {
+        name: 'Brioche',
+        price: 44,
+      }
+    ],
     img: '',
   },
   {
     id: 'Scones',
-    name: 'Scones',
-    price: 37,
+    size: [
+      {
+        name: 'Scones',
+        price: 37,
+      }
+    ],
     img: '',
   },
 ];
