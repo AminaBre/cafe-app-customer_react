@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react';
+
 import { HandleKurv } from '../Model/handleKurv';
+
 
 const Dessert = (props) => {
   const handleKurv = useContext(HandleKurv);
@@ -19,7 +21,7 @@ const Dessert = (props) => {
         ...prevstate,
         [props.type.id]: {
           ...prevstate[props.type.id],
-          [props.type.name]: {
+          [item.storlek]: {
             antal: nrOrderedOf + 1,
             price: item.price,
           },
@@ -36,7 +38,7 @@ const Dessert = (props) => {
           ...prevstate,
           [props.type.id]: {
             ...prevstate[props.type.id],
-            [props.type.name]: {
+            [item.storlek]: {
               antal: nrOrderedOf - 1,
               price: item.price
             },
@@ -70,7 +72,7 @@ const Dessert = (props) => {
                     +
                     </span>
                     <span>
-                    {item.storlek}: {item.price} kr,-
+                    {item.price} kr,-
                     </span>
                 </div>
                 );
