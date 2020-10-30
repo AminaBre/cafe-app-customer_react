@@ -9,11 +9,6 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
-#root{
-
-
-}
-
 h1 {
   margin: 0;
   padding: 0;
@@ -93,15 +88,6 @@ h1 {
   to   { bottom: 0; }
 }
 
-#total-price-div:hidden {
-  animation: slideOut 0.3s;
-}
-
-@keyframes slideOut {
-  from { bottom: 0; }
-  to   { bottom: -6rem;  }
-}
-
 #total-price-text-div {
   font-weight: 300;
   position: absolute;
@@ -152,6 +138,14 @@ h1 {
   left: 0.5rem;
 }
 
+.button {
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+/*
 .size-button-container {
   position: absolute;
   bottom: 0.5rem;
@@ -186,9 +180,4 @@ h1 {
   width: 4rem;
   height: 2.5rem;
 }
-.button {
-  padding: 4px;
-  border: 1px solid black;
-  border-radius: 1px;
-  cursor: pointer;
-}
+*/
