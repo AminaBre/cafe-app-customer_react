@@ -1,5 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import { HandleKurv } from '../Model/handleKurv';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export const PricePreView = (props) => {
   const handleKurv = useContext(HandleKurv);
@@ -30,7 +31,13 @@ export const PricePreView = (props) => {
           <div id='total-price-text-div'>
             Totalpris: <b>{totalPrice} kr</b>
           </div>
-          <button id='go-to-shopping-cart-button'>Gå til handlekurv</button>
+          <Link to='/Shoppingcart'>
+             <button  id='go-to-shopping-cart-button'>
+             <span>Gå til handlekurv</span>
+             </button>
+          </Link>
+
+        
         </div>
       )}
     </>
