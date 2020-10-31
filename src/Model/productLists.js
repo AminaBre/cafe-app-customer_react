@@ -8,7 +8,7 @@ const warmBeverages = [
       },
       {
         price: 32,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 36,
@@ -26,7 +26,7 @@ const warmBeverages = [
       },
       {
         price: 42,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 46,
@@ -44,7 +44,7 @@ const warmBeverages = [
       },
       {
         price: 36,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 40,
@@ -62,7 +62,7 @@ const warmBeverages = [
       },
       {
         price: 42,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 46,
@@ -80,7 +80,7 @@ const warmBeverages = [
       },
       {
         price: 44,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 48,
@@ -98,7 +98,7 @@ const warmBeverages = [
       },
       {
         price: 48,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 51,
@@ -116,7 +116,7 @@ const warmBeverages = [
       },
       {
         price: 38,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 42,
@@ -134,7 +134,7 @@ const warmBeverages = [
       },
       {
         price: 40,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         price: 44,
@@ -157,7 +157,7 @@ const coldBeverages = [
       {
         name: 'Iskaffe (medium)',
         price: 42,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         name: 'Iskaffe (stor)',
@@ -178,7 +178,7 @@ const coldBeverages = [
       {
         name: 'Iste (medium)',
         price: 47,
-        storlek: 'mellan',
+        storlek: 'medium',
       },
       {
         name: 'Iste (stor)',

@@ -1,7 +1,7 @@
 /* Everything */
 
-body,
-html {
+body, html {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -55,6 +55,52 @@ h1 {
 
 /* Main Menu */
 
+.expander-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.expander-title {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.expander-title:hover,
+.active {
+  background-color: rgb(216, 208, 198);
+}
+
+.expander-icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.expander-content {
+  background-color: rgb(235, 231, 228);
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.expander-text {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 1rem;
+}
+
+/* Top buttons */
+
 .menu-section-button {
   width: 28%;
   padding: 0.5rem;
@@ -66,10 +112,11 @@ h1 {
   box-shadow: 0 0 8px green;
 }
 
-.menu-item-container {
-  padding: 0.2rem 0;
-  background-color: rgb(82, 64, 43);
+.space-maker {
+  margin-bottom: 8rem;
 }
+
+/* Price popup at the bottom */
 
 #total-price-div {
   position: fixed;
@@ -109,8 +156,53 @@ h1 {
   height: 2rem;
 }
 
-/* Beverage | Dessert */
+/* Number of products buttons and number */
 
+.size-buttons-container {
+  text-transform: capitalize;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  margin: 0.4rem 0.3rem;
+  border: 1px solid black;
+}
+
+.number-of-items {
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  margin: 0.4rem 0.3rem;
+  border: 1px solid gray;
+}
+
+.minus-button {
+  background-color: rgb(235, 190, 172);
+  cursor: pointer;
+}
+
+.plus-button {
+  background-color: rgb(180, 231, 214);
+  cursor: pointer;
+}
+
+.minus-button:hover {
+  box-shadow: 0 0 10px rgb(243, 132, 132);
+}
+
+.plus-button:hover {
+  box-shadow: 0 0 10px rgb(93, 236, 115);
+}
+
+/* Shopping cart */
+
+.shopping-cart-output {
+  display: inline;
+}
+
+/*
 .menu-item-box-beverage {
 
   background-color: rgb(216, 208, 198);
@@ -121,6 +213,14 @@ h1 {
   margin: 0.5rem;
 }
 
+.menu-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+} 
+
 .menu-item-box-dessert {
   background-color: rgb(216, 208, 198);
   height: 5rem;
@@ -128,32 +228,6 @@ h1 {
   border: 1px solid black;
   border-radius: 5px;
   margin: 0.5rem;
-}
-
-.menu-item-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-}
-
-.button {
-  padding: 4px;
-  border: 1px solid black;
-  border-radius: 1px;
-  cursor: pointer;
-}
-
-.shopping-cart-output {
-  display: inline;
-}
-
-/*
-.size-button-container {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 0.5rem;
 }
 
 .size-button {

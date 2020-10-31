@@ -35,6 +35,7 @@ const MainMenu = () => {
     <>
       <MenuSelection />
       {getArea()}
+      <div className="space-maker"></div>
       <PricePreView totalPrice={totalPrice} />
     </>
   );
