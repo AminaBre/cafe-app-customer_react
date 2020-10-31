@@ -145,6 +145,10 @@ h1 {
   cursor: pointer;
 }
 
+.shopping-cart-output {
+  display: inline;
+}
+
 /*
 .size-button-container {
   position: absolute;
