@@ -14,6 +14,15 @@ h1 {
   padding: 0;
 }
 
+.menu-selection-background {
+  background-color: rgb(121, 107, 98);
+}
+
+.menu-background {
+  height: 100vh;
+  background-color: rgb(121, 107, 98);
+}
+
 /* Cursive Font */
 .font-cursive {
   font-family: 'Pacifico', cursive;

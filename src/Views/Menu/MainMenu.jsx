@@ -33,10 +33,12 @@ const MainMenu = () => {
 
   return (
     <>
-      <MenuSelection />
-      {getArea()}
-      <div className="space-maker"></div>
-      <PricePreView totalPrice={totalPrice} />
+      <div className="menu-background">
+        <MenuSelection />
+        {getArea()}
+        <div className="space-maker"></div>
+        <PricePreView totalPrice={totalPrice} />
+      </div>
     </>
   );
 };
