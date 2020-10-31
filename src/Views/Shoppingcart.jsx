@@ -38,7 +38,7 @@ export const Shoppingcart = (props) => {
             const aPrice = handleKurv.products[product][size].price;
             console.log("Antal:  " + amount);
             console.log("Pris:  " + aPrice);
-          return <div className="shopping-cart-output">Du har beställt {amount} {product} ({size}). Pris per: {aPrice}</div>;
+          return <div className="shopping-cart-output">Du har beställt {amount} {product} ({size}). Pris per: {aPrice} kr,-</div>;
           });
         })}
       </div>
