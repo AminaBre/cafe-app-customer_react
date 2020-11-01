@@ -15,7 +15,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../public/assets/product_images/coffee.jpg',
   },
   {
     id: 'Cappuccino',

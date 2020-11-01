@@ -14,7 +14,8 @@ h1 {
   padding: 0;
 }
 
-.menu-selection-background {
+.menu-selection-container {
+  text-align: center;
   background-color: rgb(121, 107, 98);
 }
 
@@ -67,7 +68,7 @@ h1 {
 .expander-section {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1rem 1rem auto;
 }
 
 .expander-title {
@@ -118,7 +119,8 @@ h1 {
 }
 
 .active-button {
-  box-shadow: 0 0 8px green;
+  box-shadow: 0 0 10px rgb(148, 230, 148);
+  color: rgb(0, 63, 0);
 }
 
 .space-maker {

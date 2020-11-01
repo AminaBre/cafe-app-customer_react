@@ -7,7 +7,7 @@ export const MenuSelection = () => {
   const menuSectionNames = ['Varm drikke', 'Kald drikke', 'Dessert'];
 
   return (
-    <div className="menu-selection-background">
+    <div className="menu-selection-container">
       {/* Ternary if-else i className, sånn at den legger til "active-button" som klasse dersom state (menuSection) tilsvarer,
             og dermed kan man ha egen CSS-styling på den knappen som er aktiv.
             onClick endrer state på menuSection med argumentet i funksjonen (altså som setState) */}
