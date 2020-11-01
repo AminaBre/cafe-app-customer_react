@@ -38,13 +38,18 @@ const MainMenu = () => {
       <div id="Front-page-menu-choice-container">
         <MenuSelection/>
       </div>
-      <div id="cardMenu">
-      <Link to='/MainMenu/:area?'><img class='warmBeverageImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
+      <div class="cardMenu">
+
+        <h3 class="menuText warmDrinks">Varm drikke</h3>
+        <h3 class="menuText coldDrinks">Kald drikke</h3>
+        <h3 class="menuText desserts">Dessert</h3>
+
+      <Link to='/MainMenu/:area?'><img id='menuImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
       </Link>
-      <Link to='/MainMenu/:area?'><img class='coldBeverageImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
+      <Link to='/MainMenu/:area?'><img id='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
       </Link>
       <Link to='/ShoppingCart/'>
-        <img class='dessertImg' src='/assets/desserts-images/cinnamon-roll-img.png' alt="Bilde av kanelsnurr" />
+        <img id='menuImg' src='/assets/desserts-images/cinnamon-roll-img.png' alt="Bilde av kanelsnurr" />
       </Link>
       </div>
       {getArea()}
