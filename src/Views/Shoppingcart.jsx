@@ -85,20 +85,22 @@ export const Shoppingcart = (props) => {
           return <div className='shopping-cart-output-container'>
                     <div className="shopping-cart-output">Du har bestilt {amount} {product} ({size}). Pris per: {aPrice} kr,-
                     </div>
-                    <span onClick={() => {
-                      removeFromBasket(handleKurv.products[product][size]);
-                    }}
-                    className={'button minus-button'}
-                    >
-                    -
-                    </span>
-                    <span onClick={() => {
-                      addToBasket(handleKurv.products[product][size]);
-                    }}
-                    className={'button plus-button'}
-                    >
-                    +
-                    </span>
+                    <div className="shopping-cart-buttons-container">
+                      <span onClick={() => {
+                        removeFromBasket(handleKurv.products[product][size]);
+                      }}
+                      className={'button minus-button'}
+                      >
+                      -
+                      </span>
+                      <span onClick={() => {
+                        addToBasket(handleKurv.products[product][size]);
+                      }}
+                      className={'button plus-button'}
+                      >
+                      +
+                      </span>
+                    </div>
                  </div>;
           });
         })}

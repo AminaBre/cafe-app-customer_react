@@ -229,7 +229,7 @@ h1 {
   border-radius: 5px;
   padding: 0.4rem 1rem;
   margin: 0.4rem 0.3rem;
-  border: 1px solid black;
+  border: 1px solid rgb(70, 70, 70);
 }
 
 .number-of-items {
@@ -238,8 +238,8 @@ h1 {
   margin: 0.4rem 0.3rem;
   border: 1px solid gray;
 }
-.menu-item-box-beverage:active {
 
+.menu-item-box-beverage:active {
   background-color: rgb(20, 153, 140);
 }
 
@@ -263,8 +263,24 @@ h1 {
 
 /* Shopping cart */
 
+.shopping-cart-output-container {
+  display: grid;
+  background-color: rgb(235, 231, 228);
+  border: 1px solid red;
+  margin: 1rem 1rem auto;
+  font-size: 1rem;
+}
+
+.shopping-cart-buttons-container {
+  border: 1px solid green;
+  display: flex;
+  float: right;
+  padding: 0 1rem;
+}
+
 .shopping-cart-output {
-  display: inline;
+  padding: 1rem;
+  
 }
 
 /*

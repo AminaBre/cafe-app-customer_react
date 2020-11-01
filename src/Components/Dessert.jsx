@@ -56,6 +56,7 @@ const Dessert = (props) => {
                 props.type.size.map((item) => {
                     return (
                     <div className="size-buttons-container">
+                        
                         <span 
                         onClick={() => {
                             removeFromBasket(item);
