@@ -34,9 +34,9 @@ export const Shoppingcart = (props) => {
           return Object.keys(handleKurv.products[product]).map((size) => {
             /* Get number of items */
             const getNrOrderOf = (item) => {
-              if (handleKurv.products[product] && handleKurv.products[product][item.storlek]) {
+              if (handleKurv.products[product] && handleKurv.products[product][item.storlek]) { // noe feil her? dunno
+                // alert(JSON.stringify(handleKurv.products[product][item.storlek]));
                 return handleKurv.products[product][item.storlek].antal;
-          
               }
               return 0;
             };

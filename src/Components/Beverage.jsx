@@ -3,6 +3,7 @@ import React, { useState, useContext } from 'react';
 import { HandleKurv } from '../Model/handleKurv';
 import '../Styles/styles.css';
 import Expander from './Expander';
+import { Shoppingcart } from '../Views/Shoppingcart';
 
 const Beverage = (props) => {
   const handleKurv = useContext(HandleKurv);
