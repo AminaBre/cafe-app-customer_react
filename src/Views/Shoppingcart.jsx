@@ -139,8 +139,4 @@ export const Shoppingcart = (props) => {
             })}
          </div> */
 
-
-
-
-
 export default Shoppingcart;

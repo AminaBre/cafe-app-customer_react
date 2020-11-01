@@ -85,6 +85,7 @@ const Beverage = (props) => {
 
 export default Beverage;
 
+
 /*
 <button className={`size-button ${menuSection === menuSectionNames[0] ? "active-button" : ""}`}>Liten</button>
 <button className={`size-button ${menuSection === menuSectionNames[1] ? "active-button" : ""}`}>Medium</button>

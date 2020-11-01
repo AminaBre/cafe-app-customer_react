@@ -1,3 +1,5 @@
+import React from 'react';
+
 const warmBeverages = [
   {
     id: 'Filterkaffe',
@@ -15,7 +17,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '../public/assets/product_images/coffee.jpg',
+
   },
   {
     id: 'Cappuccino',

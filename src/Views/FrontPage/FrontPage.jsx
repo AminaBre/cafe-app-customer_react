@@ -1,5 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
+
 import { useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '../../Styles/styles.css';
 import { VarmDrikke } from '../Menu/Components/VarmDrikke';
 import { KallDrikke } from '../Menu/Components/KallDrikke';
@@ -35,6 +37,15 @@ const MainMenu = () => {
       <h3>Welcome to Kafè Judas - Choose a menu</h3>
       <div id="Front-page-menu-choice-container">
         <MenuSelection/>
+      </div>
+      <div id="cardMenu">
+      <Link to='/MainMenu/:area?'><img class='warmBeverageImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
+      </Link>
+      <Link to='/MainMenu/:area?'><img class='coldBeverageImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
+      </Link>
+      <Link to='/ShoppingCart/'>
+        <img class='dessertImg' src='/assets/desserts-images/cinnamon-roll-img.png' alt="Bilde av kanelsnurr" />
+      </Link>
       </div>
       {getArea()}
       <PricePreView totalPrice={totalPrice} />

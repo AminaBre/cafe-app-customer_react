@@ -9,6 +9,7 @@ export const VarmDrikke = () => {
     <Beverage // Se Beverage.jsx for å se hvordan komponenten bygges
       type={warmBeverage}
     />
+    
   ));
 };
 

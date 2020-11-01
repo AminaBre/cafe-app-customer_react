@@ -58,6 +58,8 @@ h1 {
   display: grid;
 }
 
+
+
 .frontpage-div {
   border: 1px solid black;
   margin: 1rem;
@@ -109,6 +111,20 @@ h1 {
   padding: 1rem;
 }
 
+/* Front page cards */
+
+.cardMenu {
+  background-color: rgb(216, 208, 198);
+  margin: 0;
+  padding: 0 0.5rem;
+  height: 5rem;
+  order: 1;
+}
+
+#dessertImg {
+ size: 10px;
+}
+
 /* Top buttons */
 
 .menu-section-button {
@@ -144,6 +160,15 @@ h1 {
 @keyframes slideIn {
   from { bottom: -6rem; }
   to   { bottom: 0; }
+}
+
+#total-price-div:hidden {
+  animation: slideOut 0.3s;
+}
+
+@keyframes slideOut {
+  from { bottom: 0; }
+  to   { bottom: -6rem;  }
 }
 
 #total-price-text-div {
@@ -187,6 +212,10 @@ h1 {
   padding: 0.4rem 1rem;
   margin: 0.4rem 0.3rem;
   border: 1px solid gray;
+}
+.menu-item-box-beverage:active {
+
+  background-color: rgb(20, 153, 140);
 }
 
 .minus-button {
