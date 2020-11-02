@@ -33,18 +33,18 @@ const MainMenu = () => {
 
         <div class="warmDrinks">
           <Link to='/MainMenu/VarmDrikke'>
-            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kaffe" />
+            <img class='menuImg' src='/assets/menuWarmDrinks.jpg' alt="Kaffe" />
             <h1 className="frontpage-card-text">Test</h1>
         </Link>
         </div>
         <div class="coldDrinks">
         <Link to='/MainMenu/KallDrikke'>
-          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Iste" />
+          <img class='menuImg' src='/assets/cold-drinks-menu.jpg' alt="Iste" />
         </Link>
         </div>
         <div class="dessert">
           <Link to='/MainMenu/Desserts'>
-            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kanelsnurr" />
+            <img class='menuImg' src='/assets/dessert-image.jpg' alt="Kanelsnurr" />
         </Link>
         </div>
       </div>
