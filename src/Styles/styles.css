@@ -73,6 +73,10 @@ h1 {
 
 /* Main Menu */
 
+.product-image {
+  width: 100%;
+}
+
 .expander-section {
   display: flex;
   flex-direction: column;
