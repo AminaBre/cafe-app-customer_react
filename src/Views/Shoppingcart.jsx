@@ -40,39 +40,25 @@ export const Shoppingcart = (props) => {
       <div>
         {Object.keys(handleKurv.products).map((product) => {
           return Object.keys(handleKurv.products[product]).map((size) => {
-            /* Get number of items */
-            const getNrOrderOf = (item) => {
-              console.log("Trying to get size #1",handleKurv.products[product][size.storlek]);
-              console.log("Trying to get size #2",handleKurv.products[product][size]);
-              console.log("Trying to get size #3",item);
-              console.log("Trying to get size #4",item.storlek);
-              console.log("Trying to get size #5",);
-              console.log("Trying to get size #6",);
-              if (handleKurv.products[product.id] && handleKurv.products[product.id][item.storlek]) {
-                return handleKurv.products[product.id][item.storlek].antal;
-              }
-              return 0;
-            };
             /* Increase amount in basket */
             const addToBasket = (item) => {
-              handleKurv.setProducts((prevstate) => {
-                return {
-                  /* Get previous state and update [product] */
-                  ...prevstate, 
-                  [product]: {
-                    [item.storlek]: {
-                      size: item.storlek,
-                      antal: item.antal + 1,
-                      price: item.price
+              handleKurv.setProducts((prevstate) => {                                          
+                  return {
+                    /* Get previous state and update [product] */          
+                    ...prevstate,
+                    [product]: {
+                      [item.storlek]: {
+                        size: item.storlek,
+                        antal: item.antal + 1,
+                        price: item.price
+                      },
                     },
-                  },
-                };
+                  };                                
               });
             };
           /* Decrease amount in basket */
             const removeFromBasket = (item) => {
-              const nrOrderedOf = getNrOrderOf(item);
-              if (nrOrderedOf > 0) {
+              if (amount > 0) {
                 handleKurv.setProducts((prevstate) => {
                   return {
                     /* Get previous state and update [product] */
@@ -80,7 +66,7 @@ export const Shoppingcart = (props) => {
                     [product]: {                  
                       [item.storlek]: {
                         size: item.storlek,
-                        antal: item - 1,
+                        antal: item.antal - 1,
                         price: item.price
                       },
                     },

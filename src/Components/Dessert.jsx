@@ -50,7 +50,7 @@ const Dessert = (props) => {
   };
 
     return (
-        <Expander title={props.type.id}>
+        <Expander title={props.type.id} icon={props.type.icon}>
             <div className='expander-text'>
               <img className="product-image" src={props.type.img} alt={props.type.id}/>
           {

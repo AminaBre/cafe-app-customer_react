@@ -3,6 +3,7 @@ import React from 'react';
 const warmBeverages = [
   {
     id: 'Filterkaffe',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 28,
@@ -21,6 +22,7 @@ const warmBeverages = [
   },
   {
     id: 'Cappuccino',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 38,
@@ -39,6 +41,7 @@ const warmBeverages = [
   },
   {
     id: 'Americano',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 32,
@@ -57,6 +60,7 @@ const warmBeverages = [
   },
   {
     id: 'Kaffe Mocha',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 38,
@@ -75,6 +79,7 @@ const warmBeverages = [
   },
   {
     id: 'Kaffe Latte',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 38,
@@ -93,6 +98,7 @@ const warmBeverages = [
   },
   {
     id: 'Caramel Macchiato',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 45,
@@ -111,6 +117,7 @@ const warmBeverages = [
   },
   {
     id: 'Espresso',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 34,
@@ -129,6 +136,7 @@ const warmBeverages = [
   },
   {
     id: 'Cortado',
+    icon: '../assets/pngkey.png',
     size: [
       {
         price: 36,
@@ -150,6 +158,7 @@ const warmBeverages = [
 const coldBeverages = [
   {
     id: 'Iskaffe',
+    icon: '../assets/pngkey.png',
     size: [
       {
         name: 'Iskaffe (liten)',
@@ -171,6 +180,7 @@ const coldBeverages = [
   },
   {
     id: 'Iste',
+    icon: '../assets/pngkey.png',
     size: [
       {
         name: 'Iste (liten)',
@@ -195,6 +205,7 @@ const coldBeverages = [
 const desserts = [
   {
     id: 'Brownies',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Brownies',
@@ -206,6 +217,7 @@ const desserts = [
   },
   {
     id: 'Oreokake',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Oreokake',
@@ -217,6 +229,7 @@ const desserts = [
   },
   {
     id: 'Kanelbolle',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Kanelbolle',
@@ -228,6 +241,7 @@ const desserts = [
   },
   {
     id: 'Croissant',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Croissant',
@@ -239,6 +253,7 @@ const desserts = [
   },
   {
     id: 'Chiapudding',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Chiapudding',
@@ -250,6 +265,7 @@ const desserts = [
   },
   {
     id: 'Brioche',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Brioche',
@@ -260,7 +276,9 @@ const desserts = [
     img: '../assets/desserts-images/brioche-img.png',
   },
   {
+
     id: 'Scones',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Scones',

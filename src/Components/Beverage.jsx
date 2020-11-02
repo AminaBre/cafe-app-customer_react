@@ -51,7 +51,7 @@ const Beverage = (props) => {
   };
 
   return (
-  <Expander title={props.type.id}>
+  <Expander title={props.type.id} icon={props.type.icon} >
     <div className='expander-text'>
     <img 
     className="product-image"

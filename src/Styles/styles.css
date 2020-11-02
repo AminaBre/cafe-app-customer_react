@@ -20,6 +20,11 @@ h1 {
   text-shadow: 0 0 10px black;
 }
 
+.product-titles {
+
+  text-align: center;
+}
+
 .menu-selection-container {
   text-align: center;
   background-color: rgb(121, 107, 98);
@@ -152,7 +157,7 @@ h1 {
   width: auto;
   height: auto;
   border-radius: 1rem;
-  box-shadow: 0 7px 8px 0 rgba(60, 24, 12, 0.2);
+  box-shadow: 5px 7px 8px 0 rgb(74, 50, 42);
 }
 
 .frontpage-card {
@@ -236,6 +241,12 @@ h1 {
 
 #shopping-cart-done-img {
   height: 2rem;
+}
+
+.iconImage {
+  width: 10%;
+  margin-right: 1.5rem;
+  margin: 0.6rem;
 }
 
 /* Number of products buttons and number */
