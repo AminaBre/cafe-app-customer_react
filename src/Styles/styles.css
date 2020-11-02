@@ -117,21 +117,20 @@ h1 {
 
 .cardMenu {
   background-color: rgb(216, 208, 198);
-  margin: 0;
-  padding: 0 0.0rem;
   order: 1;
-  display: grid;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto auto;
+  text-align: center;
+  overflow: hidden;
 }
 
 .menuImg {
+  width: 50vh;
+  height: auto;
   border-radius: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
   box-shadow: 0 7px 8px 0 rgba(60, 24, 12, 0.2);
   transition: 0.3s;
-  position: center;
 }
 
 /* Top buttons */

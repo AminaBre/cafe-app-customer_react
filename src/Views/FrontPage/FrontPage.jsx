@@ -29,20 +29,22 @@ const MainMenu = () => {
       <div>{handleKurv}</div>
       <div id="Front-page-menu-choice-container">
       </div>
-
+      
       <div class="cardMenu">
 
       <div class="warmDrinks">
-      <Link to='/MainMenu/VarmDrikke'><img class='menuImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
+        <Link to='/MainMenu/VarmDrikke'>
+          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av kaffe" />
       </Link>
       </div>
       <div class="coldDrinks">
-      <Link to='/MainMenu/KallDrikke'><img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
+       <Link to='/MainMenu/KallDrikke'>
+         <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
       </Link>
       </div>
       <div class="dessert">
-      <Link to='/MainMenu/Desserts'>
-        <img class='menuImg' src='/assets/desserts-images/cinnamon-roll-img.png' alt="Bilde av kanelsnurr" />
+        <Link to='/MainMenu/Desserts'>
+          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av kanelsnurr" />
       </Link>
       </div>
       </div>
