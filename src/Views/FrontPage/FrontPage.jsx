@@ -18,6 +18,7 @@ const MainMenu = () => {
   // Gjeldende verdi ligger alltid i første variabel i arrayet, og endres når funksjonen (andre del av arrayet) kalles.
   const [menuSection, setMenuSection] = useState(menuSectionNames[0]); // menuSection blir til "Varm drikke", "Kald drikke" eller "Dessert".
   const [menuItems, setMenuItems] = useState([]);
+  const [fontSize, setFontsize] = useState(16);
   let { area } = useParams();
 
   const getArea = () => {
@@ -34,10 +35,20 @@ const MainMenu = () => {
   return (
     <>
       <div>{handleKurv}</div>
-      <h3>Welcome to Kafè Judas - Choose a menu</h3>
+      <p style={{
+        fontSize:`${fontSize}px`
+      }}>Welcome to Kafè Judas - Choose a menu</p>
       <div id="Front-page-menu-choice-container">
         <MenuSelection/>
       </div>
+      <div className="font-changer">
+        
+        <button onClick = {() => setFontsize(fontSize + 5)}>+ increase</button>
+        <button onClick = {() => setFontsize(fontSize - 5)}>- decrease</button>
+        <p></p>
+      
+      </div>
+
       <div class="cardMenu">
 
         <h3 class="menuText warmDrinks">Varm drikke</h3>
@@ -54,6 +65,7 @@ const MainMenu = () => {
       </div>
       {getArea()}
       <PricePreView totalPrice={totalPrice} />
+
     </>
   );
 };
