@@ -12,14 +12,11 @@ const MainApp = (props) => {
     <Router>
       <HandleKurv.Provider value={{ products, setProducts }}>
         <header id='header-container'>
-          <h1 id='header-title' className='font-cursive'>
+          <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
             Kafé Judas
-          </h1>
+          </Link>
           <img id='hamburger-icon' src='assets/hamburger-icon.png' />
         </header>
-        <Link to='/FrontPage/FrontPage'>Front Page</Link>
-        <Link to='/MainMenu'>Main Menu</Link>
-        <Link to='/Shoppingcart'>Handlekurv</Link>
 
         <Switch>
           <Route exact path='/MainMenu/:area?' component={MainMenu} />
