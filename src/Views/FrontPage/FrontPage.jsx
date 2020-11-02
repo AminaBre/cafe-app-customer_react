@@ -25,26 +25,34 @@ const MainMenu = () => {
 
   return (
     <>
-      <div>{handleKurv}</div>
+      <header id='header-container'>
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
+          Kafé Judas
+        </Link>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' />
+      </header>
+      
       <div id="Front-page-menu-choice-container">
       </div>
       
       <div class="card-menu">
 
-        <div class="warmDrinks">
+        <div class="warmDrinks frontpage-card">
           <Link to='/MainMenu/VarmDrikke'>
             <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kaffe" />
-            <h1 className="frontpage-card-text">Test</h1>
+            <h1 className="frontpage-card-text">Varme drikker</h1>
         </Link>
         </div>
-        <div class="coldDrinks">
+        <div class="coldDrinks frontpage-card">
         <Link to='/MainMenu/KallDrikke'>
           <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Iste" />
+          <h1 className="frontpage-card-text">Kalde drikker</h1>
         </Link>
         </div>
-        <div class="dessert">
+        <div class="dessert frontpage-card">
           <Link to='/MainMenu/Desserts'>
             <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kanelsnurr" />
+            <h1 className="frontpage-card-text">Desserter</h1>
         </Link>
         </div>
       </div>

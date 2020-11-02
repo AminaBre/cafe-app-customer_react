@@ -16,6 +16,8 @@ body * {
 h1 {
   margin: 0;
   padding: 0;
+  color: rgb(236, 232, 229);
+  text-shadow: 0 0 10px black;
 }
 
 .menu-selection-container {
@@ -36,26 +38,36 @@ h1 {
 /* Header */
 
 #header-container {
-  background-color: rgb(216, 208, 198);
-  margin: 0;
+  display: flex;
+  background-image: linear-gradient(to right, rgb(230, 208, 178) , rgb(219, 216, 211));
+  background-color: rgb(231, 226, 219);
   padding: 0 0.5rem;
-  height: 5rem;
+  height: 6rem;
   order: 1;
+  border-bottom: 1px solid black;
 }
 
 #header-title {
-  margin: 0;
-  position: absolute;
-  top: 0.5rem;
+  margin: 1rem auto;
   font-size: 30px;
-  color: black;
+  color: rgb(27, 26, 26);
+  text-shadow: 0 0 1px black;
 }
 
 #hamburger-icon {
-  width: 5rem;
+  width: 4rem;
   position: absolute;
-  right: -0.5rem;
+  right: 0rem;
   top: 0;
+  margin: 0.9rem 0.5rem;
+}
+
+#back-arrow-icon {
+  width: 2.5rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.6rem;
+  margin: 0.9rem 0.5rem;
 }
 
 /* Front Page */
@@ -75,6 +87,9 @@ h1 {
 
 .product-image {
   width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .expander-section {
@@ -124,10 +139,12 @@ h1 {
 /* Front page cards */
 
 .card-menu {
-  position: relative;
+  padding: 1rem 0 10rem 0;
   background-color: rgb(216, 208, 198);
   order: 1;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menuImg {
@@ -138,10 +155,20 @@ h1 {
   box-shadow: 0 7px 8px 0 rgba(60, 24, 12, 0.2);
 }
 
+.frontpage-card {
+  position: relative;
+}
+
 .frontpage-card-text {
+  width:100%;    
+  height:100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
 
 /* Top buttons */
@@ -334,7 +361,3 @@ h1 {
   height: 2.5rem;
 }
 */
-
-#root {
-  font-size: 1rem;
-}

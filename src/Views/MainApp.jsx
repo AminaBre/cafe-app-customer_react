@@ -18,6 +18,7 @@
     return (
       <Router>
         <HandleKurv.Provider value={{ products, setProducts }}>
+          {/*
           <header id='header-container'>
             <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
               Kafé Judas
@@ -30,7 +31,7 @@
             </div>
 
           </header>
-
+          */}
           <Switch>
             <Route exact path='/MainMenu/:area?' component={MainMenu} />
             <Route exact path='/ShoppingCart/' component={Shoppingcart} />

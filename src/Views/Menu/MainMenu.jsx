@@ -5,6 +5,7 @@ import { VarmDrikke } from './Components/VarmDrikke';
 import { KallDrikke } from './Components/KallDrikke';
 import { Desserts } from './Components/Dessert';
 import { MenuSelection } from './Components/MenuSelection';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { PricePreView } from '../../Components/PricePreView';
 import { HandleKurv } from '../../Model/handleKurv';
 import { render } from '@testing-library/react';
@@ -35,6 +36,15 @@ const MainMenu = () => {
   return (
     
     <>
+    <header id='header-container'>
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
+          Kafé Judas
+        </Link>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' />
+        <Link to='/FrontPage/FrontPage'>
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+        </Link>
+      </header>
 
       <div className="menu-background">
         <MenuSelection />

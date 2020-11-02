@@ -4,6 +4,7 @@ import { HandleKurv } from '../Model/handleKurv';
 import { PricePreView } from '../Components/PricePreView';
 import { Beverage } from '../Components/Beverage';
 import { Dessert } from '../Components/Dessert';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export const Shoppingcart = (props) => {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -27,6 +28,15 @@ export const Shoppingcart = (props) => {
 
   return (
     <>
+    <header id='header-container'>
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
+          Kafé Judas
+        </Link>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' />
+        <Link to='/MainMenu'>
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+        </Link>
+      </header>
       <div>
         {Object.keys(handleKurv.products).map((product) => {
           return Object.keys(handleKurv.products[product]).map((size) => {
