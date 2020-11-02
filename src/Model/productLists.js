@@ -17,7 +17,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-
+    img: '../assets/warm-beverage-images/black-coffee-img.png',
   },
   {
     id: 'Cappuccino',
@@ -35,7 +35,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/warm-beverage-images/cappuccino-img.png',
   },
   {
     id: 'Americano',
@@ -53,7 +53,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/warm-beverage-images/americano-img.png',
   },
   {
     id: 'Kaffe Mocha',
@@ -71,7 +71,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/warm-beverage-images/coffee-mocha-img.png',
   },
   {
     id: 'Kaffe Latte',
@@ -89,7 +89,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/warm-beverage-images/caffe-latte-img.png',
   },
   {
     id: 'Caramel Macchiato',
@@ -107,7 +107,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/warm-beverage-images/caramel-macchiato-img.png',
   },
   {
     id: 'Espresso',
@@ -125,7 +125,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/warm-beverage-images/espresso-img.png',
   },
   {
     id: 'Cortado',
@@ -143,7 +143,7 @@ const warmBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/warm-beverage-images/cortado-img.png',
   },
 ];
 
@@ -167,7 +167,7 @@ const coldBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/cold-drinks-images/iced-coffee-img.png',
   },
   {
     id: 'Iste',
@@ -188,7 +188,7 @@ const coldBeverages = [
         storlek: 'stor',
       },
     ],
-    img: '',
+    img: '../assets/cold-drinks-images/ice-tea-img.png',
   },
 ];
 
@@ -202,7 +202,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
-    img: '',
+    img: '../assets/desserts-images/brownies-img.png',
   },
   {
     id: 'Oreokake',
@@ -213,7 +213,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
-    img: '',
+    img: '../assets/desserts-images/oreo-cake-img.png',
   },
   {
     id: 'Kanelbolle',
@@ -224,7 +224,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
-    img: '',
+    img: '../assets/desserts-images/cinnamon-roll-img.png',
   },
   {
     id: 'Croissant',
@@ -235,7 +235,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
-    img: '',
+    img: '../assets/desserts-images/croissant-img.png',
   },
   {
     id: 'Chiapudding',
@@ -246,7 +246,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
-    img: '',
+    img: '../assets/desserts-images/brownies-img.png',
   },
   {
     id: 'Brioche',
@@ -257,7 +257,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
-    img: '',
+    img: '../assets/desserts-images/brioche-img.png',
   },
   {
     id: 'Scones',
@@ -268,7 +268,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
-    img: '',
+    img: '../assets/desserts-images/scones-img.png',
   },
 ];
 

@@ -52,7 +52,12 @@ const Beverage = (props) => {
 
   return (
   <Expander title={props.type.id}>
-    <div className='expander-text'>{
+    <div className='expander-text'>
+    <img 
+    className="product-image"
+    src={props.type.img} 
+    alt={props.type.id}/>
+    {
           props.type.size.map((item) => {
             return (
               <div className="size-buttons-container">
@@ -74,7 +79,7 @@ const Beverage = (props) => {
                   +
                 </span>
                 <span>
-                  {` ${item.storlek}: `}<strong>{item.price}</strong>{`,-`}
+                  {`  ${item.storlek}: `}<strong>{item.price}</strong>{`,-`}
                 </span>
               </div>
             );
