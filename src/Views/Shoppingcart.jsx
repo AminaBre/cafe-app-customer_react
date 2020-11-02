@@ -15,9 +15,7 @@ export const Shoppingcart = (props) => {
 
   const calcTotalPrice = () => {
     let total = 0;
-    console.log('korgen', handleKurv.products);
     Object.keys(handleKurv.products).forEach((product) => {
-      console.log('product', handleKurv.products[product]);
       Object.keys(handleKurv.products[product]).forEach((size) => {
         const amount = handleKurv.products[product][size].antal;
         const aPrice = handleKurv.products[product][size].price;
@@ -34,23 +32,28 @@ export const Shoppingcart = (props) => {
           return Object.keys(handleKurv.products[product]).map((size) => {
             /* Get number of items */
             const getNrOrderOf = (item) => {
-              if (handleKurv.products[product] && handleKurv.products[product][item.storlek]) { // noe feil her? dunno
-                // alert(JSON.stringify(handleKurv.products[product][item.storlek]));
-                return handleKurv.products[product][item.storlek].antal;
+              console.log("Trying to get size #1",handleKurv.products[product][size.storlek]);
+              console.log("Trying to get size #2",handleKurv.products[product][size]);
+              console.log("Trying to get size #3",item);
+              console.log("Trying to get size #4",item.storlek);
+              console.log("Trying to get size #5",);
+              console.log("Trying to get size #6",);
+              if (handleKurv.products[product.id] && handleKurv.products[product.id][item.storlek]) {
+                return handleKurv.products[product.id][item.storlek].antal;
               }
               return 0;
             };
             /* Increase amount in basket */
             const addToBasket = (item) => {
-              const nrOrderedOf = getNrOrderOf(item);
               handleKurv.setProducts((prevstate) => {
                 return {
-                  ...prevstate,
+                  /* Get previous state and update [product] */
+                  ...prevstate, 
                   [product]: {
-                    ...prevstate[product],
                     [item.storlek]: {
-                      antal: nrOrderedOf + 1,
-                      price: item.price,
+                      size: item.storlek,
+                      antal: item.antal + 1,
+                      price: item.price
                     },
                   },
                 };
@@ -62,11 +65,12 @@ export const Shoppingcart = (props) => {
               if (nrOrderedOf > 0) {
                 handleKurv.setProducts((prevstate) => {
                   return {
+                    /* Get previous state and update [product] */
                     ...prevstate,
-                    [product]: {
-                      ...prevstate[product],
+                    [product]: {                  
                       [item.storlek]: {
-                        antal: nrOrderedOf - 1,
+                        size: item.storlek,
+                        antal: item - 1,
                         price: item.price
                       },
                     },
@@ -76,10 +80,6 @@ export const Shoppingcart = (props) => {
             };
             const amount = handleKurv.products[product][size].antal;
             const aPrice = handleKurv.products[product][size].price;
-            console.log("Logging product:  " + product);
-            console.log("Logging size:  " + size);
-            console.log("Logging amount:  " + amount);
-            console.log("Logging price per:  " + aPrice);
 
             /* Final order output */
           return <div className='shopping-cart-output-container'>
@@ -105,40 +105,10 @@ export const Shoppingcart = (props) => {
           });
         })}
       </div>
-      <div>Totalpris: {totalPrice}</div>
+      <div><strong>Totalpris: {totalPrice}</strong></div>
     </> 
   );
   
 }
-
-/* <div className='menu-item-box-dessert'>
-        <div className='menu-item-title'>{props.type.id}</div>
-            {props.type.size.map((item) => {
-                return (
-                <div className="size-buttons-container">
-                    <span 
-                    onClick={() => {
-                        removeFromBasket(item);
-                    }}
-                    className={'button minus-button'}
-                    >
-                    -
-                    </span>
-                    <span>{getNrOrderOf(item)}</span>
-                    <span 
-                    onClick={() => {
-                        addToBasket(item);
-                    }}
-                    className={'button plus-button'}
-                    >
-                    +
-                    </span>
-                    <span>
-                    {item.price} kr,-
-                    </span>
-                </div>
-                );
-            })}
-         </div> */
 
 export default Shoppingcart;
