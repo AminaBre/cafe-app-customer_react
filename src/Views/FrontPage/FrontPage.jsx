@@ -14,7 +14,6 @@ const MainMenu = () => {
 
   // Disse to er states her i MainMenu (se "useState"). Inne i useState(her) er det lagt utgangspunkt-verdier.
   // Gjeldende verdi ligger alltid i første variabel i arrayet, og endres når funksjonen (andre del av arrayet) kalles.
-  const [fontSize, setFontsize] = useState(16);
 
   const handleKurv = () => {
     return HandleKurv.map((
@@ -30,32 +29,24 @@ const MainMenu = () => {
       <div id="Front-page-menu-choice-container">
       </div>
       
-      <div class="cardMenu">
+      <div class="card-menu">
 
-      <div class="warmDrinks">
-        <Link to='/MainMenu/VarmDrikke'>
-          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av kaffe" />
-      </Link>
-      </div>
-      <div class="coldDrinks">
-       <Link to='/MainMenu/KallDrikke'>
-         <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
-      </Link>
-      </div>
-      <div class="dessert">
-        <Link to='/MainMenu/Desserts'>
-          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av kanelsnurr" />
-      </Link>
-      </div>
-      </div>
-
-      <div className="font-changer">
-        
-        <button onClick = {() => setFontsize(fontSize + 5)}>+ increase</button>
-        <button onClick = {() => setFontsize(fontSize - 5)}>- decrease</button>
-        
-        <p></p>
-      
+        <div class="warmDrinks">
+          <Link to='/MainMenu/VarmDrikke'>
+            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kaffe" />
+            <h1 className="frontpage-card-text">Test</h1>
+        </Link>
+        </div>
+        <div class="coldDrinks">
+        <Link to='/MainMenu/KallDrikke'>
+          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Iste" />
+        </Link>
+        </div>
+        <div class="dessert">
+          <Link to='/MainMenu/Desserts'>
+            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kanelsnurr" />
+        </Link>
+        </div>
       </div>
 
       <PricePreView totalPrice={totalPrice} />

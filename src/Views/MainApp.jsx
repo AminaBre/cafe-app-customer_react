@@ -7,7 +7,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { HandleKurv } from '../Model/handleKurv';
 
 const MainApp = (props) => {
+
+  const [fontSize, setFontsize] = useState(16);
   const [products, setProducts] = useState({});
+
+
+  const allElements = document.getElementById("root");
+  allElements.style.fontSize = `${fontSize}px`;
+
   return (
     <Router>
       <HandleKurv.Provider value={{ products, setProducts }}>
@@ -16,6 +23,12 @@ const MainApp = (props) => {
             Kafé Judas
           </Link>
           <img id='hamburger-icon' src='assets/hamburger-icon.png' />
+
+          <div className="font-changer">
+            <button onClick = {() => setFontsize(fontSize + 5)}>+ increase</button>
+            <button onClick = {() => setFontsize(fontSize - 5)}>- decrease</button>
+          </div>
+
         </header>
 
         <Switch>
