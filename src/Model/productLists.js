@@ -205,7 +205,7 @@ const coldBeverages = [
 const desserts = [
   {
     id: 'Brownies',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Brownies',
@@ -217,6 +217,7 @@ const desserts = [
   },
   {
     id: 'Oreokake',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Oreokake',
@@ -228,7 +229,7 @@ const desserts = [
   },
   {
     id: 'Kanelbolle',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Kanelbolle',
@@ -240,7 +241,7 @@ const desserts = [
   },
   {
     id: 'Croissant',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Croissant',
@@ -252,6 +253,7 @@ const desserts = [
   },
   {
     id: 'Chiapudding',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Chiapudding',
@@ -263,7 +265,7 @@ const desserts = [
   },
   {
     id: 'Brioche',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Brioche',
@@ -276,7 +278,7 @@ const desserts = [
   {
 
     id: 'Scones',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/cake-icon.png',
     size: [
       {
         name: 'Scones',
