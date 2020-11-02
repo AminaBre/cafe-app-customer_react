@@ -11,7 +11,6 @@ const Dessert = (props) => {
   const getNrOrderOf = (item) => {
     if (handleKurv.products[props.type.id] && handleKurv.products[props.type.id][item.storlek]) {
       return handleKurv.products[props.type.id][item.storlek].antal;
-
     }
     return 0;
   };
