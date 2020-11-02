@@ -55,11 +55,11 @@ const MainMenu = () => {
         <h3 class="menuText coldDrinks">Kald drikke</h3>
         <h3 class="menuText desserts">Dessert</h3>
 
-      <Link to='/MainMenu/:area?'><img id='menuImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
+      <Link to='/MainMenu/VarmDrikke'><img id='menuImg' src='/assets/warm-beverage-images/cortado-img.png' alt="Bilde av kaffe" />
       </Link>
-      <Link to='/MainMenu/:area?'><img id='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
+      <Link to='/MainMenu/KallDrikke'><img id='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Bilde av iste" />
       </Link>
-      <Link to='/ShoppingCart/'>
+      <Link to='/MainMenu/Desserts'>
         <img id='menuImg' src='/assets/desserts-images/cinnamon-roll-img.png' alt="Bilde av kanelsnurr" />
       </Link>
       </div>
