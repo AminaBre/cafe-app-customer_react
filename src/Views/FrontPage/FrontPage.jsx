@@ -8,12 +8,16 @@ import { KallDrikke } from '../Menu/Components/KallDrikke';
 import { Desserts } from '../Menu/Components/Dessert';
 import { PricePreView } from '../../Components/PricePreView';
 import { HandleKurv } from '../../Model/handleKurv';
+import { Modal } from '../../Modal';
 
 const MainMenu = () => {
   let totalPrice = 1;
 
   // Disse to er states her i MainMenu (se "useState"). Inne i useState(her) er det lagt utgangspunkt-verdier.
   // Gjeldende verdi ligger alltid i første variabel i arrayet, og endres når funksjonen (andre del av arrayet) kalles.
+
+  const [show, setShow] = useState(false);
+  const closeModalHandler = () => setShow(false);
 
   const handleKurv = () => {
     return HandleKurv.map((
@@ -26,10 +30,17 @@ const MainMenu = () => {
   return (
     <>
       <header id='header-container'>
+        <div>
+          {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
+        </div>
+
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
           Kafé Judas
         </Link>
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' />
+        
+          <Modal show={show} close={closeModalHandler}/>      
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => setShow(true)}/>
+
       </header>
       
       <div id="Front-page-menu-choice-container">

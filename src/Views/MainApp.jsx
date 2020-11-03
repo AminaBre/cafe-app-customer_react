@@ -17,6 +17,7 @@ import Contact from './Contact';
     allElements.style.fontSize = `${fontSize}px`;
 
     return (
+      
       <Router>
         <HandleKurv.Provider value={{ products, setProducts }}>
           {/*

@@ -38,22 +38,22 @@ h1 {
 /* Cursive Font */
 .font-cursive {
   font-family: 'Pacifico', cursive;
-}
 
+}
 /* Header */
 
 #header-container {
   display: flex;
   background-image: linear-gradient(to right, rgb(230, 208, 178) , rgb(219, 216, 211));
   background-color: rgb(231, 226, 219);
-  padding: 0 0.5rem;
+  padding: 0rem;
   height: 6rem;
   order: 1;
   border-bottom: 1px solid black;
 }
 
 #header-title {
-  margin: 1rem auto;
+  margin: 1rem;
   font-size: 30px;
   color: rgb(27, 26, 26);
   text-shadow: 0 0 1px black;
@@ -313,6 +313,44 @@ h1 {
 .shopping-cart-output {
   padding: 1rem;
   
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*
