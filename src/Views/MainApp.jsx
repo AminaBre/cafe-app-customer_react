@@ -16,6 +16,7 @@
     allElements.style.fontSize = `${fontSize}px`;
 
     return (
+      
       <Router>
         <HandleKurv.Provider value={{ products, setProducts }}>
           {/*
