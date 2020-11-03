@@ -5,6 +5,7 @@
   import '../Styles/styles.css';
   import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
   import { HandleKurv } from '../Model/handleKurv';
+import Contact from './Contact';
 
   const MainApp = (props) => {
 
@@ -35,6 +36,7 @@
           <Switch>
             <Route exact path='/MainMenu/:area?' component={MainMenu} />
             <Route exact path='/ShoppingCart/' component={Shoppingcart} />
+            <Route exact path='/Contact/' component={Contact} />
             <Route component={FrontPage} />
           </Switch>
         </HandleKurv.Provider>

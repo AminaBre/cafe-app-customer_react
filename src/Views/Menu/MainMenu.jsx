@@ -45,6 +45,7 @@ const MainMenu = () => {
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
       </header>
+      <Link to='/Contact'>Hei</Link>
 
       <div className="menu-background">
         <MenuSelection />
