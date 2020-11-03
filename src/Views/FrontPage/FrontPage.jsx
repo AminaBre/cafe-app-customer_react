@@ -38,7 +38,7 @@ const MainMenu = () => {
           Kafé Judas
         </Link>
         
-          <Modal show={show} close={closeModalHandler}/>      
+          <Modal show={show} close={closeModalHandler}/>   
         <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => setShow(true)}/>
 
       </header>
@@ -46,7 +46,7 @@ const MainMenu = () => {
       <div id="Front-page-menu-choice-container">
       </div>
       
-      <div class="card-menu">
+      <div class="card-menu menu-background">
 
         <div class="warmDrinks frontpage-card">
           <Link to='/MainMenu/VarmDrikke'>

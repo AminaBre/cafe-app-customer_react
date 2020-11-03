@@ -33,8 +33,9 @@ const MainMenu = () => {
     }
   };
 
+
+
   return (
-    
     <>
     <header id='header-container'>
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>

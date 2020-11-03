@@ -5,15 +5,12 @@
     margin: 4rem auto;
     transition: all .4s ease;
     z-index: 3;
-
 }
 
 .modal-body .modal-menu-text {
     font-size: 30px;
     padding: 0rem;
     margin: 0rem 0 2rem 0;
-    font-family: 'Pacifico', cursive;
-    
 }
 
 .modal-content {
@@ -57,7 +54,6 @@
     cursor: pointer;
     background: rgb(130, 60, 46);
     color: #fff;
-    
 }
 
 .back-drop {
