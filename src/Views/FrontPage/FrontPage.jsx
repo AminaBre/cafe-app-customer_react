@@ -46,7 +46,7 @@ const MainMenu = () => {
       <div id="Front-page-menu-choice-container">
       </div>
       
-      <div class="card-menu menu-background">
+      <div class="card-menu texture-background">
 
         <div class="warmDrinks frontpage-card">
           <Link to='/MainMenu/VarmDrikke'>

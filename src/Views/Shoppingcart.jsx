@@ -5,8 +5,12 @@ import { PricePreView } from '../Components/PricePreView';
 import { Beverage } from '../Components/Beverage';
 import { Dessert } from '../Components/Dessert';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Modal } from '../Modal';
 
 export const Shoppingcart = (props) => {
+
+  const [show, setShow] = useState(false);
+  const closeModalHandler = () => setShow(false);
   const [totalPrice, setTotalPrice] = useState(0);
   const handleKurv = useContext(HandleKurv);
 
@@ -28,14 +32,21 @@ export const Shoppingcart = (props) => {
 
   return (
     <>
-    <header id='header-container'>
+     <header id='header-container'>
+        <div>
+          {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
+        </div>
+
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
           Kafé Judas
         </Link>
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' />
         <Link to='/MainMenu'>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
+        
+          <Modal show={show} close={closeModalHandler}/>   
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => setShow(true)}/>
+
       </header>
       <div>
         {Object.keys(handleKurv.products).map((product) => {

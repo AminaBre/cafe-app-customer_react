@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './Styles/Modal.css'
 
 export const Modal = ({ show, close}) => {
@@ -10,17 +12,30 @@ export const Modal = ({ show, close}) => {
             //opacity: show ? '1' : '0'
         }}>
             <div className="modal-content">
-            <div className="modal-header">
-            <button onClick={close} classnName="btn-x-cancel">x</button>
-            </div>
-                <div className="modal-body">
-                    <h2 className="modal-menu-text">Meny</h2>
-                    <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                    <div className="modal-footer">
-                        <button onClick={close} classnName="btn-cancel">Close</button>
-                    </div>
+                <div className="modal-header">
+                <button onClick={close} classnName="close-modal-button">x</button>
                 </div>
+                    <div className="modal-body">
+                        <h2 className="modal-menu-text">Hva leter du etter?</h2>
+                        <Link to='/FrontPage/FrontPage'>
+                            <h3>Fremsiden</h3>
+                        </Link>
+                        <Link to='/MainMenu'>
+                            <h3>Hovedmeny</h3>
+                        </Link>
+                        <Link to='/ShoppingCart'>
+                            <h3>Handlekurv</h3>
+                        </Link>
+                        <Link to='/FrontPage/FrontPage'>
+                            <h3>Ordrehistorikk</h3>
+                        </Link>
+                        <Link to='/Contact'>
+                            <h3>Kontakt oss</h3>
+                        </Link>
+                        <Link to='/FrontPage/FrontPage'>
+                            <h3>Andre kaféer</h3>
+                        </Link>
+                    </div>
             </div>
         </div>
     )
