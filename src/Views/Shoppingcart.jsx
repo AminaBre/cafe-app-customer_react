@@ -6,6 +6,7 @@ import { Beverage } from '../Components/Beverage';
 import { Dessert } from '../Components/Dessert';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Modal } from '../Modal';
+import { PaymentModal } from '../Model/PaymentModal'
 
 export const Shoppingcart = (props) => {
 
@@ -13,6 +14,8 @@ export const Shoppingcart = (props) => {
   const closeModalHandler = () => setShow(false);
   const [totalPrice, setTotalPrice] = useState(0);
   const handleKurv = useContext(HandleKurv);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     calcTotalPrice();
@@ -112,7 +115,12 @@ export const Shoppingcart = (props) => {
           });
         })}
       </div>
-      <div><strong>Totalpris: {totalPrice}</strong></div>
+      <div className="payment-ready-container">
+      <div id="totPrice"><strong>Totalpris: {totalPrice}</strong></div>    
+        <button className="pay-now" onClick={() => setIsOpen(true)}>
+          Bekreft min ordre</button> 
+        <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
+        </div>
     </> 
   );
   
