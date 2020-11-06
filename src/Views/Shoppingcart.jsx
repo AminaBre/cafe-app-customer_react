@@ -14,8 +14,14 @@ export const Shoppingcart = (props) => {
   const closeModalHandler = () => setShow(false);
   const [totalPrice, setTotalPrice] = useState(0);
   const handleKurv = useContext(HandleKurv);
+  let audio = new Audio("/click.mp4")
+
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const start = () => {
+    audio.play()
+  }
 
   useEffect(() => {
     calcTotalPrice();
@@ -40,10 +46,11 @@ export const Shoppingcart = (props) => {
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
 
-        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
           Kafé Judas
         </Link>
-        <Link to='/MainMenu'>
+
+        <Link to='/MainMenu' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
         
@@ -56,6 +63,7 @@ export const Shoppingcart = (props) => {
           return Object.keys(handleKurv.products[product]).map((size) => {
             /* Increase amount in basket */
             const addToBasket = (item) => {
+              
               handleKurv.setProducts((prevstate) => {                                          
                   return {
                     /* Get previous state and update [product] */          

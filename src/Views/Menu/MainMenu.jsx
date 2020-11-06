@@ -14,12 +14,18 @@ import { Modal } from '../../Modal';
 const MainMenu = () => {
   const menuSectionNames = ['Varm drikke', 'Kald drikke', 'Dessert'];
   let totalPrice = 1;
+  let audio = new Audio("/click.mp4")
 
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
   const [menuSection, setMenuSection] = useState(menuSectionNames[0]); // menuSection blir til "Varm drikke", "Kald drikke" eller "Dessert".
   const [menuItems, setMenuItems] = useState([]);
   let { area } = useParams();
+
+  const start = () => {
+    audio.play()
+  }
+
 
   const getArea = () => {
     switch (area) {
@@ -43,10 +49,10 @@ const MainMenu = () => {
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
 
-        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
           Kafé Judas
         </Link>
-        <Link to='/FrontPage/FrontPage'>
+        <Link to='/FrontPage/FrontPage' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
         

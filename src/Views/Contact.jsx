@@ -11,8 +11,13 @@ export const Contact = () => {
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
   const [totalPrice, setTotalPrice] = useState(0);
+  let audio = new Audio("/click.mp4")
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const start = () => {
+    audio.play()
+  }
 
     return(
 
@@ -23,7 +28,7 @@ export const Contact = () => {
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
 
-        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive'>
+        <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
           Kafé Judas
         </Link>
         <Link to='/FrontPage/FrontPage'>
