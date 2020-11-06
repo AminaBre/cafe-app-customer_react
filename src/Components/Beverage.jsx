@@ -7,6 +7,17 @@ import { Shoppingcart } from '../Views/Shoppingcart';
 
 const Beverage = (props) => {
   const handleKurv = useContext(HandleKurv);
+  let audio1 = new Audio("/addSound.mp4")
+  let audio2 = new Audio("/removeSound.mp4")
+
+
+  const startAudio1 = () => {
+    audio1.play()
+  }
+
+  const startAudio2 = () => {
+    audio2.play()
+  }
 
   const getNrOrderOf = (item) => {
     if (handleKurv.products[props.type.id] && handleKurv.products[props.type.id][item.storlek]) {
@@ -16,6 +27,8 @@ const Beverage = (props) => {
   };
 
   const addToBasket = (item) => {
+    startAudio1();
+  
     console.log("item:", item);
     const nrOrderedOf = getNrOrderOf(item);
     handleKurv.setProducts((prevstate) => {
@@ -33,6 +46,7 @@ const Beverage = (props) => {
   };
 
   const removeFromBasket = (item) => {
+    startAudio2();
     const nrOrderedOf = getNrOrderOf(item);
     if (nrOrderedOf > 0) {
       handleKurv.setProducts((prevstate) => {

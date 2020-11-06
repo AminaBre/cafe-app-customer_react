@@ -55,7 +55,7 @@ export const Shoppingcart = (props) => {
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => setShow(true)}/>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
 
       </header>
       <div>
