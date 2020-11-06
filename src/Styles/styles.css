@@ -6,7 +6,7 @@ body, html {
   padding: 0;
   background-color: white;
   color: black;
-  font-family: 'Lato', sans-serif; 
+  font-family: 'Lato', sans-serif;
 }
 
 body * {
@@ -34,6 +34,8 @@ h1 {
 }
 
 .texture-background {
+  min-height: 100vh;
+  overflow: auto;
   background-color:rgb(61, 54, 45);
   background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%), radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
   background-size: 80px 80px;
@@ -42,8 +44,7 @@ h1 {
 
 /* Cursive Font */
 .font-cursive {
-  font-family: 'Pacifico', cursive;
-
+  font-family: 'Architects Daughter', cursive;
 }
 
 /* Header */
@@ -60,10 +61,11 @@ h1 {
 
 #header-title {
   position: relative;
-  margin: 1rem auto;
-  font-size: 30px;
+  margin: 1.3rem auto;
+  font-size: 38px;
   color: rgb(231, 227, 221);
   text-shadow: 0 0 1px black;
+  text-decoration: none;
 }
 
 #hamburger-icon {
@@ -244,10 +246,13 @@ h1 {
 
 #go-to-shopping-cart-button {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   right: 1rem;
-  height: 3rem;
-  width: 7rem;
+  height: 4rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 0 5px rgb(93, 236, 115);
 }
 
 #shopping-cart-done-img {
@@ -306,64 +311,105 @@ h1 {
 
 /* Shopping cart */
 
+#all-shopping-cart-outputs {
+  background-color: #2B261F;
+  border: 2px solid rgb(235, 231, 228);
+  border-radius: 5px;
+  margin: 1rem 0.5rem 2rem;
+  height: 270px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background: #3a816b;
+}
+
 .shopping-cart-output-container {
   display: grid;
   background-color: rgb(235, 231, 228);
-  border: 1px solid red;
-  margin: 1rem 1rem auto;
+  margin: 0.5rem 0.5rem auto;
   font-size: 1rem;
 }
 
 .shopping-cart-buttons-container {
-  border: 1px solid green;
   display: flex;
   float: right;
-  padding: 0 1rem;
+  padding: 0 1rem 0.5rem 1rem;
 }
 
 .shopping-cart-output {
-  padding: 1rem;
-  
+  padding: 1rem 1rem 0.5rem 1rem;
 }
 
-.payment-ready-container {
-  position: relative;
-  margin: 5rem auto;
-  width: 12rem;
+.other-cart-container {
+  text-align: center;
+  color: rgb(235, 231, 228);
+  font-size: 2rem;
 }
 
-#totPrice {
+input {
+  margin: 1rem;
+  width: 15rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.cart-title {
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+  text-shadow: 0 0 5px black;
+}
+
+.extras-img {
+  margin: 1rem 0.5rem;
+  height: 7rem;
+  border-radius: 5px;
+}
+
+#payment-ready-container .pay-now {
+  background-color: #20614c;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  animation: slideIn 0.3s;
+}
+
+/* #totPrice {
   background-color: rgb(227, 221, 204);
-  margin: auto;
-  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
   text-align: center;
   font-size: 25px;
-}
+}*/
 
 .pay-now {
-
-  margin: 3rem auto;
-  position:relative;
-  background-color: #49987f; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
+  text-shadow: 0 0 2px black;
+  padding: 1rem 2rem;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  
+  font-size: 1.2rem;
 }
 
 /* CONTACT PAGE */
 .contact-form-container {
   height: 100vh;
-
 }
 
 
 .contact-form {
-
   background-color: rgba(255, 255, 255, 0.518);
   display: flex;
   width: 19rem;

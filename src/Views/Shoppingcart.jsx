@@ -7,6 +7,7 @@ import { Dessert } from '../Components/Dessert';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Modal } from '../Modal';
 import { PaymentModal } from '../Model/PaymentModal'
+import { desserts } from '../Model/productLists';
 
 export const Shoppingcart = (props) => {
 
@@ -47,7 +48,7 @@ export const Shoppingcart = (props) => {
         </div>
 
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
-          Kafé Judas
+          Handlekurv
         </Link>
 
         <Link to='/MainMenu' onClick={start}>
@@ -58,7 +59,8 @@ export const Shoppingcart = (props) => {
         <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
 
       </header>
-      <div>
+      <div className="texture-background">
+        <div id='all-shopping-cart-outputs'>
         {Object.keys(handleKurv.products).map((product) => {
           return Object.keys(handleKurv.products[product]).map((size) => {
             /* Increase amount in basket */
@@ -101,7 +103,7 @@ export const Shoppingcart = (props) => {
 
             /* Final order output */
           return <div className='shopping-cart-output-container'>
-                    <div className="shopping-cart-output">Du har bestilt {amount} {product} ({size}). Pris per: {aPrice} kr,-
+                    <div className="shopping-cart-output">{product} ({size}). Pris per: {aPrice} kr,-
                     </div>
                     <div className="shopping-cart-buttons-container">
                       <span onClick={() => {
@@ -111,6 +113,7 @@ export const Shoppingcart = (props) => {
                       >
                       -
                       </span>
+                      <span className="number-of-items">{amount}</span>
                       <span onClick={() => {
                         addToBasket(handleKurv.products[product][size]);
                       }}
@@ -122,13 +125,24 @@ export const Shoppingcart = (props) => {
                  </div>;
           });
         })}
-      </div>
-      <div className="payment-ready-container">
-      <div id="totPrice"><strong>Totalpris: {totalPrice}</strong></div>    
-        <button className="pay-now" onClick={() => setIsOpen(true)}>
-          Bekreft min ordre</button> 
-        <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
         </div>
+        <div className='other-cart-container'>
+          <h4 className='cart-title'>Noe ekstra?</h4>
+          <img className='extras-img' src={desserts[3].img} alt={desserts[3].id}/>
+          <img className='extras-img' src={desserts[6].img} alt={desserts[6].id}/>
+        </div>
+        <div className='other-cart-container'>
+          <h4 className='cart-title'>Kommentar til bestillingen?</h4>
+          <input type="text" placeholder="Vennligst havremelk i cappuccinoen"/>
+        </div>
+        {totalPrice > 0 &&
+        <div id="payment-ready-container">  
+          <button className="pay-now" onClick={() => setIsOpen(true)}>
+            Fullfør ordre på <strong>{totalPrice}</strong> kroner</button> 
+          <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
+        </div>
+        }
+      </div>
     </> 
   );
   
