@@ -1,4 +1,4 @@
-/* Everything */
+
 
 body, html {
   box-sizing: border-box;
@@ -6,11 +6,11 @@ body, html {
   padding: 0;
   background-color: white;
   color: black;
-  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Lato', sans-serif; 
 }
 
 body * {
-  font-family: 'Comic sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 h1 {
@@ -21,7 +21,6 @@ h1 {
 }
 
 .product-titles {
-
   text-align: center;
 }
 
@@ -46,6 +45,7 @@ h1 {
   font-family: 'Pacifico', cursive;
 
 }
+
 /* Header */
 
 #header-container {
@@ -89,8 +89,6 @@ h1 {
 #front-page-container {
   display: grid;
 }
-
-
 
 .frontpage-div {
   border: 1px solid black;
@@ -148,6 +146,10 @@ h1 {
   font-weight: 400;
   font-size: 14px;
   padding: 1rem;
+}
+
+.allergens-p {
+  margin: 0 0 0.5rem 1.3rem;
 }
 
 /* Front page cards */
