@@ -213,6 +213,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
+    allergens: 'Gluten',
     img: '../assets/desserts-images/brownies-img.png',
   },
   {
@@ -225,6 +226,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
+    allergens: 'Soya, gluten, melk',
     img: '../assets/desserts-images/oreo-cake-img.png',
   },
   {
@@ -237,6 +239,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
+    allergens: 'Egg, gluten, melk',
     img: '../assets/desserts-images/cinnamon-roll-img.png',
   },
   {
@@ -249,6 +252,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
+    allergens: 'Egg, gluten, melk',
     img: '../assets/desserts-images/croissant-img.png',
   },
   {
@@ -261,6 +265,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
+    allergens: 'Nøtter (mandelmelk)',
     img: '../assets/desserts-images/brownies-img.png',
   },
   {
@@ -273,6 +278,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
+    allergens: 'Egg, gluten, melk',
     img: '../assets/desserts-images/brioche-img.png',
   },
   {
@@ -286,6 +292,7 @@ const desserts = [
         storlek: 'vanlig'
       }
     ],
+    allergens: 'Egg, gluten, melk',
     img: '../assets/desserts-images/scones-img.png',
   },
 ];
