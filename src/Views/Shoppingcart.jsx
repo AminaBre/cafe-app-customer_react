@@ -167,8 +167,10 @@ export const Shoppingcart2 = (props) => {
           </div>
           {totalPrice > 0 &&
           <div id="payment-ready-container">  
+          <Link to= '/Payment'>
             <button className="pay-now" onClick={() => {setIsOpen(true); start(); }}>
               Fullfør ordre på <strong>{totalPrice}</strong> kroner</button> 
+              </Link>
             <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
           </div>
           }
