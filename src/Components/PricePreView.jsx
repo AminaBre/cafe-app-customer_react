@@ -34,11 +34,12 @@ export const PricePreView = (props) => {
       {totalPrice > 0 && (
         <div id='total-price-div'>
           <div id='total-price-text-div'>
-            Totalpris: <b>{totalPrice} kr</b>
+            Totalpris: <p id="p-total-price">{totalPrice} kr</p>
           </div>
           <Link to='/Shoppingcart' onClick={start}>
              <button  id='go-to-shopping-cart-button'>
-             <span>Gå til handlekurv</span>
+               <img className="shopping-cart-img" src="../assets/icons/shoppingCart.png"></img>
+             <p className="p-go-to-shoppingCart">Gå til handlekurv</p>
              </button>
           </Link>
 

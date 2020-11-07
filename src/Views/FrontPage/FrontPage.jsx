@@ -48,8 +48,6 @@ const MainMenu = () => {
           <Modal show={show} close={closeModalHandler}/>   
         <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => { setShow(true); start(); }}/>
 
-        
-
       </header>
       
       <div id="Front-page-menu-choice-container">
@@ -59,19 +57,19 @@ const MainMenu = () => {
 
         <div onClick={start} class="warmDrinks frontpage-card">
           <Link to='/MainMenu/VarmDrikke'>
-            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kaffe" />
+            <img class='menuImg' src='/assets/hotDrinks-menu.jpg' alt="Kaffe" />
             <h1 className="frontpage-card-text">Varme drikker</h1>
         </Link>
         </div>
         <div onClick={start} class="coldDrinks frontpage-card">
         <Link to='/MainMenu/KallDrikke'>
-          <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Iste" />
+          <img class='menuImg' src='/assets/coldDrinks-menu .jpg' alt="Iste" />
           <h1 className="frontpage-card-text">Kalde drikker</h1>
         </Link>
         </div>
         <div onClick={start} class="dessert frontpage-card">
           <Link to='/MainMenu/Desserts'>
-            <img class='menuImg' src='/assets/cold-drinks-images/ice-tea-img.png' alt="Kanelsnurr" />
+            <img class='menuImg' src='/assets/croissants.jpg' alt="Kanelsnurr" />
             <h1 className="frontpage-card-text">Desserter</h1>
         </Link>
         </div>

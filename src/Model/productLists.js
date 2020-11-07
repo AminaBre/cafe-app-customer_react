@@ -3,7 +3,7 @@ import React from 'react';
 const warmBeverages = [
   {
     id: 'Filterkaffe',
-    icon: '../assets/icons/coffee-icon-test.png',
+    icon: '../assets/icons/wc1.png',
     size: [
       {
         price: 28,
@@ -22,7 +22,7 @@ const warmBeverages = [
   },
   {
     id: 'Cappuccino',
-    icon: '../assets/icons/coffee-icon-test2.png',
+    icon: '../assets/icons/wc2.png',
     size: [
       {
         price: 38,
@@ -41,7 +41,7 @@ const warmBeverages = [
   },
   {
     id: 'Americano',
-    icon: '../assets/icons/coffee-icon-test3.png',
+    icon: '../assets/icons/wc3.png',
     size: [
       {
         price: 32,
@@ -60,7 +60,7 @@ const warmBeverages = [
   },
   {
     id: 'Kaffe Mocha',
-    icon: '../assets/icons/coffee-icon-test4.png',
+    icon: '../assets/icons/wc4.png',
     size: [
       {
         price: 38,
@@ -79,7 +79,7 @@ const warmBeverages = [
   },
   {
     id: 'Kaffe Latte',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/icons/wc4.png',
     size: [
       {
         price: 38,
@@ -98,7 +98,7 @@ const warmBeverages = [
   },
   {
     id: 'Caramel Macchiato',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/icons/wc4.png',
     size: [
       {
         price: 45,
@@ -117,7 +117,7 @@ const warmBeverages = [
   },
   {
     id: 'Espresso',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/icons/wc2.png',
     size: [
       {
         price: 34,
@@ -136,7 +136,7 @@ const warmBeverages = [
   },
   {
     id: 'Cortado',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/icons/wc3.png',
     size: [
       {
         price: 36,
@@ -158,7 +158,7 @@ const warmBeverages = [
 const coldBeverages = [
   {
     id: 'Iskaffe',
-    icon: '../assets/pngkey.png',
+    icon: '/assets/icons/iced-coffee.png',
     size: [
       {
         name: 'Iskaffe (liten)',
@@ -180,7 +180,7 @@ const coldBeverages = [
   },
   {
     id: 'Iste',
-    icon: '../assets/pngkey.png',
+    icon: '../assets/icons/iced-tea.png',
     size: [
       {
         name: 'Iste (liten)',
@@ -205,7 +205,7 @@ const coldBeverages = [
 const desserts = [
   {
     id: 'Brownies',
-    icon: '../assets/cake-icon.png',
+    icon: '../assets/icons/d1.png',
     size: [
       {
         name: 'Brownies',
@@ -218,7 +218,7 @@ const desserts = [
   },
   {
     id: 'Oreokake',
-    icon: '../assets/cake-icon.png',
+    icon: '../assets/icons/d2.png',
     size: [
       {
         name: 'Oreokake',
@@ -231,7 +231,7 @@ const desserts = [
   },
   {
     id: 'Kanelbolle',
-    icon: '../assets/cake-icon.png',
+    icon: '../assets/icons/d3.png',
     size: [
       {
         name: 'Kanelbolle',
@@ -244,7 +244,7 @@ const desserts = [
   },
   {
     id: 'Croissant',
-    icon: '../assets/cake-icon.png',
+    icon: '../assets/icons/d4.png',
     size: [
       {
         name: 'Croissant',
@@ -257,7 +257,7 @@ const desserts = [
   },
   {
     id: 'Chiapudding',
-    icon: '../assets/cake-icon.png',
+    icon: '../assets/icons/d5.png',
     size: [
       {
         name: 'Chiapudding',
@@ -270,7 +270,7 @@ const desserts = [
   },
   {
     id: 'Brioche',
-    icon: '../assets/cake-icon.png',
+    icon: '../assets/icons/d6.png',
     size: [
       {
         name: 'Brioche',
@@ -284,7 +284,7 @@ const desserts = [
   {
 
     id: 'Scones',
-    icon: '../assets/cake-icon.png',
+    icon: '../assets/icons/d4.png',
     size: [
       {
         name: 'Scones',

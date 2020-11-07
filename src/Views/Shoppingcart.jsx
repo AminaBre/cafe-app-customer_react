@@ -110,7 +110,8 @@ export const Shoppingcart2 = (props) => {
             <div className="back-drop" onClick={closeModalHandler}></div>
           ) : null}
         </div>
-
+        <Link to='/MainMenu'>
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         <Link
           to="/FrontPage/FrontPage"
           h1
@@ -139,6 +140,7 @@ export const Shoppingcart2 = (props) => {
       {orderList}
 
       <div className="payment-ready-container">
+
         <div id="totPrice">
           <strong>Totalpris: {totalPrice}</strong>
         </div>
