@@ -75,7 +75,10 @@ const MainMenu = () => {
 
 export default MainMenu;
 
+
+
 /*
+blabla
           const App = (props) => {
             const [buttonClicked, changeComponent] = useState(0);
 
