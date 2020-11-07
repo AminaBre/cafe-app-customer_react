@@ -14,8 +14,19 @@ export const Shoppingcart2 = (props) => {
   const [totalPrice, setTotalPrice] = useState(0);
   const handleKurv = useContext(HandleKurv);
   let audio = new Audio("/click.mp4");
+  let audio1 = new Audio("/addSound.mp4")
+  let audio2 = new Audio("/removeSound.mp4")
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const startAudio1 = () => {
+    audio1.play()
+  }
+
+  const startAudio2 = () => {
+    audio2.play()
+  }
+
 
   const start = () => {
     audio.play();
@@ -38,6 +49,7 @@ export const Shoppingcart2 = (props) => {
   };
 
   const removeFromBasket = (productName, sizeName) => {
+    startAudio2();
     const newProducts = {
       ...handleKurv.products,
       [productName]: {
@@ -52,6 +64,7 @@ export const Shoppingcart2 = (props) => {
   };
 
   const addToBasket = (productName, sizeName) => {
+    startAudio1();
     const newProducts = {
       ...handleKurv.products,
       [productName]: {
@@ -142,9 +155,11 @@ export const Shoppingcart2 = (props) => {
         <div id="totPrice">
           <strong>Totalpris: {totalPrice}</strong>
         </div>
+        <Link to= '/Payment' onClick={start}>
         <button className="pay-now" onClick={() => setIsOpen(true)}>
           Bekreft min ordre
         </button>
+        </Link>
         <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
       </div>
     </>

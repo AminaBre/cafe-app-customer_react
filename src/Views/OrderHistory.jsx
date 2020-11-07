@@ -6,7 +6,7 @@ import '../Styles/styles.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Modal } from '../Modal';
 
-export const OrderComplete = () => {
+export const OrderHistory = () => {
 
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
@@ -31,7 +31,7 @@ export const OrderComplete = () => {
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
           Kafé Judas
         </Link>
-        <Link to='/Payment' onClick={start}>
+        <Link to='/OrderComplete' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
         
@@ -40,11 +40,7 @@ export const OrderComplete = () => {
 
       </header>
 
-        <Link to= '/OrderHistory' onClick={start}>
-        <button className="pay-now" onClick={() => setIsOpen(true)}>
-         Se min ordrehistorikk
-        </button>
-        </Link>
+     <div>Tidligere ordre</div>
       
     
         </>
@@ -53,4 +49,4 @@ export const OrderComplete = () => {
 
 }
 
-export default OrderComplete;
+export default OrderHistory;
