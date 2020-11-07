@@ -32,9 +32,7 @@ export const Modal = ({ show, close}) => {
                         <Link to='/Contact'>
                             <h3>Kontakt oss</h3>
                         </Link>
-                        <Link to='/FrontPage/FrontPage'>
-                            <h3>Andre kaféer</h3>
-                        </Link>
+                
                     </div>
             </div>
         </div>

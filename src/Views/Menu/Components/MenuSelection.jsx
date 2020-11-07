@@ -5,6 +5,11 @@ export const MenuSelection = () => {
   const { area } = useParams();
   const history = useHistory();
   const menuSectionNames = ['Varm drikke', 'Kald drikke', 'Dessert'];
+  let audio = new Audio("/click.mp4")
+
+  const start = () => {
+    audio.play()
+  }
 
   return (
     <div className="menu-selection-container">
@@ -13,19 +18,20 @@ export const MenuSelection = () => {
             onClick endrer state på menuSection med argumentet i funksjonen (altså som setState) */}
       <button
         className={`menu-section-button ${area === 'VarmDrikke' ? 'active-button' : ''}`}
-        onClick={() => history.push('/MainMenu/VarmDrikke')}
+        onClick={() =>{ history.push('/MainMenu/VarmDrikke'); start()}}
+        
       >
         {menuSectionNames[0]} {/* Det som står på knappen. Hentes bare statisk fra menuSectionNames-array øverst */}
       </button>
       <button
         className={`menu-section-button ${area === 'KallDrikke' ? 'active-button' : ''}`}
-        onClick={() => history.push('/MainMenu/KallDrikke')}
+        onClick={() =>{ history.push('/MainMenu/Kaldrikke'); start()}}
       >
         {menuSectionNames[1]}
       </button>
       <button
         className={`menu-section-button ${area === 'Desserts' ? 'active-button' : ''}`}
-        onClick={() => history.push('/MainMenu/Desserts')}
+        onClick={() =>{ history.push('/MainMenu/Desserts'); start()}}
       >
         {menuSectionNames[2]}
       </button>

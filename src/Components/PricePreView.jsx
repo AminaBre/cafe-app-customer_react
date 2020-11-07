@@ -5,6 +5,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 export const PricePreView = (props) => {
   const handleKurv = useContext(HandleKurv);
   const [totalPrice, setTotalPrice] = useState(0);
+  let audio = new Audio("/click.mp4")
+
+  const start = () => {
+    audio.play()
+  }
 
   useEffect(() => {
     calcTotalPrice();
@@ -31,7 +36,7 @@ export const PricePreView = (props) => {
           <div id='total-price-text-div'>
             Totalpris: <b>{totalPrice} kr</b>
           </div>
-          <Link to='/Shoppingcart'>
+          <Link to='/Shoppingcart' onClick={start}>
              <button  id='go-to-shopping-cart-button'>
              <span>Gå til handlekurv</span>
              </button>

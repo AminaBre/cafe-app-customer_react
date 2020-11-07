@@ -5,6 +5,11 @@ import '../Styles/styles.css';
 const Expander = props => {
   const [active, setActive] = useState(false);
   const contentRef = useRef(null);
+  let audio = new Audio("/click.mp4")
+
+  const start = () => {
+    audio.play()
+  }
 
   useEffect(() => {
     contentRef.current.style.maxHeight = active ? `${contentRef.current.scrollHeight}px` : '0px'
@@ -21,7 +26,9 @@ const Expander = props => {
 
   return (
     <div className="expander-section">
-      <button className="expander-title" onClick={toogleActive}>
+      <button className="expander-title" onClick={() => {toogleActive(); start()}}>
+
+
         <img className="iconImage" src={props.icon}/>
         <p style={titleStyle}> {props.title}</p>
         <span className={active ? 'expander-icon rotate': 'expander-icon'}>
