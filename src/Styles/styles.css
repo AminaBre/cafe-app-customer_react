@@ -50,8 +50,8 @@ h1 {
   padding: 0rem;
   height: 5.2rem;
   order: 1;
-  background-image: linear-gradient(to bottom, #5c6963, #67746d, #96a09b);
-  background-color: #b2b6ac;
+  /* background-image: linear-gradient(to bottom, #5c6963, #67746d, #96a09b); */
+  background-color: #5c6963;
 }
 
 #coffee-header {
@@ -102,7 +102,7 @@ h1 {
 .product-image {
   width: 100%;
   max-width: 400px;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -223,7 +223,6 @@ h1 {
   /* background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%); */
   background-color:#45584f;
   color:white;
-  box-shadow: 0 0 8px white;
 }
 
 .space-maker {
