@@ -25,7 +25,7 @@ export const MenuSelection = () => {
       </button>
       <button
         className={`menu-section-button ${area === 'KallDrikke' ? 'active-button' : ''}`}
-        onClick={() =>{ history.push('/MainMenu/Kaldrikke'); start()}}
+        onClick={() =>{ history.push('/MainMenu/KallDrikke'); start()}}
       >
         {menuSectionNames[1]}
       </button>

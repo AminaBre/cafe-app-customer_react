@@ -63,7 +63,7 @@ const MainMenu = () => {
       
       
 
-      <div className="menu-background texture-background">
+      <div className="content-background">
         <MenuSelection />
         {getArea()}
         <div className="space-maker"></div>

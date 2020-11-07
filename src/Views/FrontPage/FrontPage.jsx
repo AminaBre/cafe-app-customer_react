@@ -11,7 +11,6 @@ import { HandleKurv } from '../../Model/handleKurv';
 import { Modal } from '../../Modal';
 
 const MainMenu = () => {
-  let totalPrice = 1;
   let audio = new Audio("/click.mp4")
 
   // Disse to er states her i MainMenu (se "useState"). Inne i useState(her) er det lagt utgangspunkt-verdier.
@@ -53,7 +52,7 @@ const MainMenu = () => {
       <div id="Front-page-menu-choice-container">
       </div>
       
-      <div class="card-menu texture-background">
+      <div className="card-menu">
 
         <div onClick={start} class="warmDrinks frontpage-card">
           <Link to='/MainMenu/VarmDrikke'>
@@ -74,9 +73,6 @@ const MainMenu = () => {
         </Link>
         </div>
       </div>
-
-      <PricePreView totalPrice={totalPrice} />
-
     </>
   );
 };

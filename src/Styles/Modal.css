@@ -1,7 +1,7 @@
 .modal-wrapper {
     right: 0;
     position: absolute;
-    background: rgb(59, 49, 36);
+    background: #35413b;
     width: 80%;
     max-width: 500px;
     z-index: 10;
@@ -21,7 +21,7 @@
 .modal-body {
     margin-bottom: 2rem;
     padding: 0 0 1rem 0;
-    background-color:rgb(59, 49, 36);
+    background-color: #35413b;
 }
 
 .modal-body h3 {
