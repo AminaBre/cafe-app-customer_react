@@ -34,10 +34,6 @@ h1 {
   overflow: auto;
 }
 
-.texture-background {
-  background-color: red;
-}
-
 /* Cursive Font */
 .font-cursive {
   font-family: 'Architects Daughter', cursive;
@@ -140,6 +136,8 @@ h1 {
 
 .expander-icon {
   margin-left: auto;
+  margin-right: 1rem;
+  font-size: 1rem;
   padding: 0rem;
   transition: transform 0.6s ease;
 }
