@@ -10,7 +10,6 @@ import { PaymentModal } from '../Model/PaymentModal'
 import { desserts } from '../Model/productLists';
 
 export const Shoppingcart = (props) => {
-
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -138,15 +137,6 @@ export const Shoppingcart = (props) => {
                  </div>;
           });
         })}
-<<<<<<< HEAD
-=======
-      </div>
-      <div className="payment-ready-container">
-      <div id="totPrice"><strong>Totalpris: {totalPrice}</strong></div>    
-        <button className="pay-now" onClick={() => {setIsOpen(true); start(); }}>
-          Bekreft min ordre</button> 
-        <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
->>>>>>> e8dff96d447f6fe5253ab6113cd5df61f7c74594
         </div>
         <div className='other-cart-container'>
           <h4 className='cart-title'>Noe ekstra?</h4>
@@ -159,7 +149,7 @@ export const Shoppingcart = (props) => {
         </div>
         {totalPrice > 0 &&
         <div id="payment-ready-container">  
-          <button className="pay-now" onClick={() => setIsOpen(true)}>
+          <button className="pay-now" onClick={() => {setIsOpen(true); start(); }}>
             Fullfør ordre på <strong>{totalPrice}</strong> kroner</button> 
           <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
         </div>
