@@ -1,11 +1,15 @@
 .modal-wrapper {
-    right: 0;
+    right: -30vh;
     position: absolute;
     background: #35413b;
     width: 80%;
     max-width: 500px;
     z-index: 10;
-    box-shadow: 0 0 5px rgb(238, 234, 230);
+    animation: slide 0.5s forwards;
+}
+
+@keyframes slide {
+    100% { right: 0; }
 }
 
 .modal-body .modal-menu-text {

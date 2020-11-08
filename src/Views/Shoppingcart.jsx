@@ -51,17 +51,19 @@ export const Shoppingcart2 = (props) => {
 
   const removeFromBasket = (productName, sizeName) => {
     startAudio2();
-    const newProducts = {
-      ...handleKurv.products,
-      [productName]: {
-        ...handleKurv.products[productName],
-        [sizeName]: {
-          antal: handleKurv.products[productName][sizeName]["antal"] - 1,
-          price: handleKurv.products[productName][sizeName]["price"],
+    if (handleKurv.products[productName][sizeName]["antal"] > 0) {
+      const newProducts = {
+        ...handleKurv.products,
+        [productName]: {
+          ...handleKurv.products[productName],
+          [sizeName]: {
+            antal: handleKurv.products[productName][sizeName]["antal"] - 1,
+            price: handleKurv.products[productName][sizeName]["price"],
+          },
         },
-      },
+      };
+      handleKurv.setProducts(newProducts);
     };
-    handleKurv.setProducts(newProducts);
   };
 
   const addToBasket = (productName, sizeName) => {
@@ -79,11 +81,8 @@ export const Shoppingcart2 = (props) => {
     handleKurv.setProducts(newProducts);
   };
 
-  const addExtra = () => {
-    let cart = document.getElementById("all-shopping-cart-outputs");
-    let newProduct = "<div class='shopping-cart-output-container'>Du har lagt til en croissant<br/> Pris per: 40 </div>"
-    cart.innerHTML += newProduct;
-    
+  
+  const addExtra = (productName, sizeName) => {
   }
 
   const orderList = Object.keys(handleKurv.products).map(
@@ -118,14 +117,6 @@ export const Shoppingcart2 = (props) => {
       ))
       );
 
-      
-    // product.map((size) => {
-    //   console.log(size);
-    //   console.log(product);
-    // });
-  
-
-  //   <li key={`${order.id}-${order.size}`}>{<OrderCard data={order} />}</li>
 
   return (
     <>
@@ -166,13 +157,13 @@ export const Shoppingcart2 = (props) => {
           {orderList}
         </div>
 
-        <div className='other-cart-container'>
-            <h4 className='cart-title'>Noe ekstra?</h4>
-            <img onClick={addExtra} className='extras-img' src={desserts[3].img} alt={desserts[3].id}></img>
+        <div className='other-container'>
+            <h4 className='other-title'>Noe ekstra?</h4>
+            <img onClick={addExtra('Croissant', 'vanlig')} className='extras-img' src={desserts[3].img} alt={desserts[3].id}></img>
             <img className='extras-img' src={desserts[6].img} alt={desserts[6].id}></img>
           </div>
-          <div className='other-cart-container'>
-            <h4 className='cart-title'>Kommentar til bestillingen?</h4>
+          <div className='other-container'>
+            <h4 className='other-title'>Kommentar til bestillingen?</h4>
             <input type="text" placeholder="Vennligst havremelk i cappuccinoen"/>
           </div>
           {totalPrice > 0 &&

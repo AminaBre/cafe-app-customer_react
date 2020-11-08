@@ -166,12 +166,13 @@ h1 {
 /* Front page cards */
 
 .card-menu {
-  padding: 1rem 0 10rem 0;
+  padding: 1rem 0 0 0;
   background-color: #96a09b;
   order: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .menuImg {
@@ -356,8 +357,8 @@ h1 {
 /* Shopping cart */
 
 #all-shopping-cart-outputs {
+  color: rgb(41, 48, 49);
   background-color: #656860;
-  border: 2px solid rgb(235, 231, 228);
   border-radius: 5px;
   margin: 1rem 0.5rem 2rem;
   height: 270px;
@@ -392,10 +393,18 @@ h1 {
   padding: 1rem 1rem 0.5rem 1rem;
 }
 
-.other-cart-container {
+.other-container {
   text-align: center;
   color: rgb(235, 231, 228);
   font-size: 2rem;
+}
+
+.payment-title {
+  padding: 2rem 0 1rem 0;
+}
+
+.payment-option-box {
+  margin: 0rem;
 }
 
 input {
@@ -406,7 +415,7 @@ input {
   font-size: 0.9rem;
 }
 
-.cart-title {
+.other-title {
   font-size: 1.5rem;
   margin: 1rem 0 0 0;
   text-shadow: 0 0 5px black;
@@ -521,65 +530,35 @@ input {
   top: 2.3rem;
 }
 
-#order-details{
-  display: flex;
-  flex-direction: column;
-  margin-top: 10%;
-  align-items: center;
-  justify-content: center;
-}
-
-#order-details-text{
-  margin: 0px;
- 
-}
-
 #countdown {
-
-  background-color: #45584f;
-  width: 14rem;
-  height: 14rem;
+  background-color: #5c6963;
+  width: 20rem;
+  height: auto;
+  margin: 0 auto;
   margin-top: 2rem;
+  border-radius: 15px;
 }
 
-#timer-div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#timer-div {
+  padding: 1rem;
 }
 
-#timer-txt{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+#timer-txt {
+  font-size: 1.5rem;
+  padding: 0 2rem;
 }
 
-#timer-txt2{
-  font-size: 10px;
-
-  margin-top: 2rem;
+#timer-count {
+  margin: 0.5rem 0 0 0;
+  font-size: 3rem;
 }
 
-#timer-count{
-  margin-top: 2rem;
-  font-size: 50px;
-}
-
-#vipps-pic{
-  width: 60%;
-  height: 60%;
+#payment-pic {
+  width: 15rem;
   margin-top: 1rem;
 }
 
-#bank-pic{
-  width: 60%;
-  height: 60%;
-  margin-top: 2rem;
-}
-
-#test{
+#payment-options-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -594,7 +573,8 @@ input {
 
 }
 
-#payment-txt{
+#payment-txt {
+  color: white;
   font-size: 30px;
   margin-top: 2rem;
 }

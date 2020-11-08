@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+
 import FrontPage from './FrontPage/FrontPage';
 import MainMenu from './Menu/MainMenu';
 import Shoppingcart from './Shoppingcart';
@@ -7,28 +8,57 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Modal } from '../Modal';
 import Expander from '../Components/Expander';
 import Timer from '../Views/timer';
+import { Shoppingcart2 } from './Shoppingcart';
+import '../Styles/styles.css';
+import { PricePreView } from '../Components/PricePreView';
+import { HandleKurv } from "../Model/handleKurv";
 
-export const OrderComplete = () => {
 
+export const OrderComplete = (props) => {
+
+  const handleKurv = useContext(HandleKurv);
   const [show, setShow] = useState(false);
   const closeModalHandler = () => setShow(false);
-  const [totalPrice, setTotalPrice] = useState(0);
   let audio = new Audio("/click.mp4")
-
-  const [isOpen, setIsOpen] = useState(false);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   const start = () => {
     audio.play()
   }
 
-    return(
+  useEffect(() => {
+    calcTotalPrice();
+  }, [handleKurv.products]);
 
-        
-        
+  const calcTotalPrice = () => {
+    let total = 0;
+    Object.keys(handleKurv.products).forEach((product) => {
+      Object.keys(handleKurv.products[product]).forEach((size) => {
+        const amount = handleKurv.products[product][size].antal;
+        const aPrice = handleKurv.products[product][size].price;
+        total += amount * aPrice;
+      });
+    });
+    setTotalPrice(total);
+  };
 
+  const orderList = Object.keys(handleKurv.products).map(
+    (product) =>
+      Object.keys(handleKurv.products[product]).map((size) => (
+        <div className="shopping-cart-output-container">
+          <div className="shopping-cart-output">
+            Du har bestilt {handleKurv.products[product][size]["antal"]}{" "}
+            {product} ({size}) <br/> Pris per:{" "}
+            {handleKurv.products[product][size]["price"]} kr,-
+          </div>
+        </div>
+      ))
+    );
+
+    return (
         <>
 
-<header id='header-container'>
+      <header id='header-container'>
         <div>
           {show ? <div className="back-drop" onClick={closeModalHandler}></div> : null}
         </div>
@@ -45,28 +75,20 @@ export const OrderComplete = () => {
 
       </header>
 
-      <div id="order-details">
-          <h1 id="order-details-header">Ordredetaljer</h1>
-          <p id="order-details-text">1 Cappuchino (liten)</p>
-          <p id="order-details-text">1 Brownie</p>
+      <div className="content-background">
+      
+        <div className="other-container">
+          <h2 className="other-title payment-title">Din ordre for {totalPrice} kroner</h2>
+        </div>
+
+        <div id='all-shopping-cart-outputs'>
+            {orderList}
+        </div>
+
+        <div className="other-container">
           <div id="countdown"><Timer></Timer></div>
+        </div>
       </div>
-
-
-        <Expander title="Din ordrehistorikk" >
-            <div className="order-hisory">
-                <h3>2020 - 11 - 06</h3>
-                <p>Kaffe (liten)</p>
-            </div>
-            <div className="order-hisory">
-                <h3>2020 - 10 - 07</h3>
-                <p>Brownie</p>
-            </div>
-            <div className="order-hisory">
-                <h3>2020 - 09 - 01</h3>
-                <p>Americano (Stor)</p>
-            </div>
-         </Expander>
 
          
       
