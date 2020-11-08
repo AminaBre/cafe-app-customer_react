@@ -68,7 +68,7 @@ const MainMenu = () => {
         </div>
         <div onClick={start} class="dessert frontpage-card">
           <Link to='/MainMenu/Desserts'>
-            <img class='menuImg' src='/assets/croissant-card-menu.jpg' alt="Kanelsnurr" />
+            <img class='menuImg' src='/assets/croissant-menu-card.jpg' alt="Kanelsnurr" />
             <h1 className="frontpage-card-text">Desserter</h1>
         </Link>
         </div>

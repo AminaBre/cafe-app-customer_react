@@ -64,7 +64,7 @@ const Dessert = (props) => {
     return (
         <Expander title={props.type.id} icon={props.type.icon}>
             <div className='expander-text'>
-              <img className="product-image" src={props.type.img} alt={props.type.id}/>
+              <img className="product-image" alt="product-image" src={props.type.img} alt={props.type.id}/>
               <p className='allergens-p'>Allergener: {props.type.allergens}</p>
           {
                 props.type.size.map((item) => {

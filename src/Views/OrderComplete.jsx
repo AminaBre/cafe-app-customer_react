@@ -47,8 +47,8 @@ export const OrderComplete = (props) => {
       Object.keys(handleKurv.products[product]).map((size) => (
         <div className="shopping-cart-output-container">
           <div className="shopping-cart-output">
-            Du har bestilt {handleKurv.products[product][size]["antal"]}{" "}
-            {product} ({size}) <br/> Pris per:{" "}
+            {handleKurv.products[product][size]["antal"]}{" "}
+            {product} ({size}). Pris per:{" "}
             {handleKurv.products[product][size]["price"]} kr,-
           </div>
         </div>
@@ -67,11 +67,11 @@ export const OrderComplete = (props) => {
           Kafé Judas
         </Link>
         <Link to='/Payment' onClick={start}>
-          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' alt='arrow-icon' />
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' alt='hamburger-icon' onClick={() => {setShow(true); start()}}/>
 
       </header>
 

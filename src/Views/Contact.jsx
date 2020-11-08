@@ -32,11 +32,11 @@ export const Contact = () => {
           Kontakt oss
         </Link>
         <Link to='/FrontPage/FrontPage' onClick={start}>
-          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' img='arrow-icon'/>
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' alt='hamburger-icon' onClick={() => {setShow(true); start()}}/>
 
       </header>
       
@@ -45,12 +45,12 @@ export const Contact = () => {
             <div class="contact-form">
             <h3 className="info-txt">40644715</h3>
             <h3 className="info-txt">cafe@cafe.com </h3>
-              <img id='telephone-icon' src='../assets/icons/telephone-icon.png' />
-              <img id='mail-icon' src='../assets/icons/mail-icon.png' />
+              <img id='telephone-icon' src='../assets/icons/telephone-icon.png' alt='telephone-icon' />
+              <img id='mail-icon' src='../assets/icons/mail-icon.png' alt='mail-icon' />
               <div className="other-container">
                 <h3 className="other-title map-txt">Hvor holder vi til?</h3>
              </div>
-          <img id='map-img' src='../assets/icons/map.jpg' />
+          <img id='map-img' src='../assets/icons/map.jpg' alt='map-picture' />
         </div>
         </div>
         </body>

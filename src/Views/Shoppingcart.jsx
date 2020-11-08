@@ -90,8 +90,8 @@ export const Shoppingcart2 = (props) => {
       Object.keys(handleKurv.products[product]).map((size) => (
         <div className="shopping-cart-output-container">
           <div className="shopping-cart-output">
-            Du har bestilt {handleKurv.products[product][size]["antal"]}{" "}
-            {product} ({size}) <br/> Pris per:{" "}
+            {handleKurv.products[product][size]["antal"]}{" "}
+            {product} ({size}). Pris per:{" "}
             {handleKurv.products[product][size]["price"]} kr,-
           </div>
           <div className="shopping-cart-buttons-container">
@@ -138,13 +138,14 @@ export const Shoppingcart2 = (props) => {
         </Link>
 
         <Link to="/MainMenu" onClick={start}>
-          <img id="back-arrow-icon" src="../assets/back-arrow.png" />
+          <img id="back-arrow-icon" src="../assets/back-arrow.png" alt='arrow-icon' />
         </Link>
 
         <Modal show={show} close={closeModalHandler} />
         <img
           id="hamburger-icon"
           src="../assets/hamburger-icon.png"
+          alt='hamburger-icon'
           onClick={() => {
             setShow(true);
             start();
@@ -159,8 +160,8 @@ export const Shoppingcart2 = (props) => {
 
         <div className='other-container'>
             <h4 className='other-title'>Noe ekstra?</h4>
-            <img onClick={addExtra('Croissant', 'vanlig')} className='extras-img' src="../assets/noe-ekstra (1).jpg" alt={desserts[3].id}></img>
-            <img className='extras-img' src="../assets/noe-ekstra (2).jpg" alt={desserts[6].id}></img>
+            <img alt='croissant' onClick={addExtra('Croissant', 'vanlig')} className='extras-img' src="../assets/noe-ekstra (1).jpg" alt={desserts[3].id}></img>
+            <img alt='dessert'className='extras-img' src="../assets/noe-ekstra (2).jpg" alt={desserts[6].id}></img>
           </div>
           <div className='other-container'>
             <h4 className='other-title'>Kommentar til bestillingen?</h4>
