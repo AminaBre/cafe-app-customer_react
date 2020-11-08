@@ -40,12 +40,12 @@ export const Payment = () => {
         <div className="content-background">
           <div className="other-container">
             <h2 className="other-title payment-title">Velg betalingsløsning</h2>
-            <Link id="test2" to='OrderComplete'>
+            <Link id="test2" to='OrderComplete' onClick={start}>
               <div className="payment-option-box">
                 <img id="payment-pic" src='vipps.png' alt='vipps-logo'></img>
               </div>
               <div className="payment-option-box">
-                <img id="payment-pic" src='mastercard.jpg' alt='mastercard-logo'></img>
+                <img onclick={start}id="payment-pic" src='mastercard.jpg' alt='mastercard-logo'></img>
               </div>
             </Link>
           </div>
