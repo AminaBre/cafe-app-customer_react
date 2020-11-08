@@ -159,8 +159,8 @@ export const Shoppingcart2 = (props) => {
 
         <div className='other-container'>
             <h4 className='other-title'>Noe ekstra?</h4>
-            <img onClick={addExtra('Croissant', 'vanlig')} className='extras-img' src={desserts[3].img} alt={desserts[3].id}></img>
-            <img className='extras-img' src={desserts[6].img} alt={desserts[6].id}></img>
+            <img onClick={addExtra('Croissant', 'vanlig')} className='extras-img' src="../assets/noe-ekstra (1).jpg" alt={desserts[3].id}></img>
+            <img className='extras-img' src="../assets/noe-ekstra (2).jpg" alt={desserts[6].id}></img>
           </div>
           <div className='other-container'>
             <h4 className='other-title'>Kommentar til bestillingen?</h4>
