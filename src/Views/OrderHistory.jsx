@@ -5,6 +5,7 @@ import Shoppingcart from './Shoppingcart';
 import '../Styles/styles.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Modal } from '../Modal';
+import Expander from '../Components/Expander';
 
 export const OrderHistory = () => {
 
@@ -31,7 +32,7 @@ export const OrderHistory = () => {
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
           Kafé Judas
         </Link>
-        <Link to='/OrderComplete' onClick={start}>
+        <Link to='/FrontPage/FrontPage' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
         </Link>
         
@@ -40,7 +41,47 @@ export const OrderHistory = () => {
 
       </header>
 
-     <div>Tidligere ordre</div>
+     <div className='content-background'>
+        <div className="other-container">
+          <h2 className="other-title payment-title">Ordrehistorikk</h2>
+        </div>
+        <Expander title='1. august 2020' icon="shopping-cart.png">
+          <div className='expander-text'>
+            2 filterkaffe (liten) for kroner 28 per stk. <br/>
+            1 kanelbolle for kroner 46. <br/><br/>
+            Totalpris: 102 kroner.
+          </div>
+        </Expander>
+        <Expander title='28. august 2020' icon="shopping-cart.png">
+          <div className='expander-text'>
+            1 cappucino (stor) for kroner 46. <br/>
+            1 croissant for kroner 38. <br/><br/>
+            Totalpris: 84 kroner.
+          </div>
+        </Expander>
+        <Expander title='3. september 2020' icon="shopping-cart.png">
+          <div className='expander-text'>
+            2 filterkaffe (liten) for kroner 28 per stk. <br/>
+            1 kanelbolle for kroner 46. <br/><br/>
+            Totalpris: 102 kroner.
+          </div>
+        </Expander>
+        <Expander title='21. september 2020' icon="shopping-cart.png">
+          <div className='expander-text'>
+            1 cappucino (stor) for kroner 46. <br/>
+            1 croissant for kroner 38. <br/><br/>
+            Totalpris: 84 kroner.
+          </div>
+        </Expander>
+        <Expander title='7. oktober 2020' icon="shopping-cart.png">
+          <div className='expander-text'>
+            2 filterkaffe (liten) for kroner 28 per stk. <br/>
+            1 kanelbolle for kroner 46. <br/><br/>
+            Totalpris: 102 kroner.
+          </div>
+        </Expander>
+        
+     </div>
       
     
         </>

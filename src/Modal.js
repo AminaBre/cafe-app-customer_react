@@ -8,8 +8,6 @@ export const Modal = ({ show, close}) => {
         <div className="modal-wrapper" 
         style={{
             display: show ? 'block' : 'none'
-            //transform: show ? 'translateY(0vh)' : 'translateY(-100vh)',
-            //opacity: show ? '1' : '0'
         }}>
             <div className="modal-content">
                 <div className="modal-header">
@@ -26,13 +24,12 @@ export const Modal = ({ show, close}) => {
                         <Link to='/ShoppingCart'>
                             <h3>Handlekurv</h3>
                         </Link>
-                        <Link to='/FrontPage/FrontPage'>
+                        <Link to='/OrderHistory'>
                             <h3>Ordrehistorikk</h3>
                         </Link>
                         <Link to='/Contact'>
                             <h3>Kontakt oss</h3>
                         </Link>
-                
                     </div>
             </div>
         </div>
