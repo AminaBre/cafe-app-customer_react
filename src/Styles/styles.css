@@ -16,8 +16,8 @@ body * {
 h1 {
   margin: 0;
   padding: 0;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px black;
+  color: rgba(70, 83, 71, 0.771);
+  text-shadow: 5px 2px 8px #fff;
 }
 
 .product-titles {
@@ -125,13 +125,21 @@ h1 {
   background-color: rgb(255, 255, 255);
   color: #444;
   cursor: pointer;
-  border-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   box-shadow: 2px 2px 6px 0 rgb(134, 145, 140);
 }
 
 .expander-title
 .active {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+
 
 }
 
@@ -151,7 +159,8 @@ h1 {
   background-color: #fff;
   overflow: hidden;
   transition: max-height 0.6s ease;
-  border-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .expander-text {

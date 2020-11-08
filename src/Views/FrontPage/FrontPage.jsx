@@ -56,19 +56,19 @@ const MainMenu = () => {
 
         <div onClick={start} class="warmDrinks frontpage-card">
           <Link to='/MainMenu/VarmDrikke'>
-            <img class='menuImg' src='/assets/hotDrinks-menu.jpg' alt="Kaffe" />
+            <img class='menuImg' src='/assets/coffee-menu-card (1).jpg' alt="Kaffe" />
             <h1 className="frontpage-card-text">Varme drikker</h1>
         </Link>
         </div>
         <div onClick={start} class="coldDrinks frontpage-card">
         <Link to='/MainMenu/KallDrikke'>
-          <img class='menuImg' src='/assets/coldDrinks-menu .jpg' alt="Iste" />
+          <img class='menuImg' src='/assets/iced-coffee-menu-card.jpg' alt="Iste" />
           <h1 className="frontpage-card-text">Kalde drikker</h1>
         </Link>
         </div>
         <div onClick={start} class="dessert frontpage-card">
           <Link to='/MainMenu/Desserts'>
-            <img class='menuImg' src='/assets/croissants.jpg' alt="Kanelsnurr" />
+            <img class='menuImg' src='/assets/croissant-card-menu.jpg' alt="Kanelsnurr" />
             <h1 className="frontpage-card-text">Desserter</h1>
         </Link>
         </div>
