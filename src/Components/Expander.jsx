@@ -29,7 +29,7 @@ const Expander = props => {
       <button className="expander-title" onClick={() => {toogleActive(); start()}}>
 
 
-        <img className="iconImage" src={props.icon}/>
+        <img className="iconImage" src={props.icon} alt="icon-image"/>
         <p style={titleStyle}> {props.title}</p>
         <span className={active ? 'expander-icon rotate': 'expander-icon'}>
           <strong>{`>`}</strong>

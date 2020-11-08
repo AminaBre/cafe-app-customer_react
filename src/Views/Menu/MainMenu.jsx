@@ -53,11 +53,11 @@ const MainMenu = () => {
           Hovedmeny
         </Link>
         <Link to='/FrontPage/FrontPage' onClick={start}>
-          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' alt="arrow-icon" />
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
+        <img id='hamburger-icon' alt = "hamburger-icon" src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
 
       </header>
       

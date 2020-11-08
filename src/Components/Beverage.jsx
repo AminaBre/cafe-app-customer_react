@@ -68,6 +68,7 @@ const Beverage = (props) => {
     <Expander title={props.type.id} icon={props.type.icon} >
       <div className='expander-text'>
       <img 
+      alt="product-image"
       className="product-image"
       src={props.type.img} 
       alt={props.type.id}/>

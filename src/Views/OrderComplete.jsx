@@ -67,11 +67,11 @@ export const OrderComplete = (props) => {
           Kafé Judas
         </Link>
         <Link to='/Payment' onClick={start}>
-          <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+          <img id='back-arrow-icon' src='../assets/back-arrow.png' alt='arrow-icon' />
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   
-        <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
+        <img id='hamburger-icon' src='../assets/hamburger-icon.png' alt='hamburger-icon' onClick={() => {setShow(true); start()}}/>
 
       </header>
 

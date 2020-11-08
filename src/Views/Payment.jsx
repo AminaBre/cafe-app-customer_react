@@ -30,11 +30,11 @@ export const Payment = () => {
               Kafé Judas
             </Link>
             <Link to='/Shoppingcart' onClick={start}>
-              <img id='back-arrow-icon' src='../assets/back-arrow.png' />
+              <img id='back-arrow-icon' src='../assets/back-arrow.png' alt='arrow-icon' />
             </Link>
             
               <Modal show={show} close={closeModalHandler}/>
-            <img id='hamburger-icon' src='../assets/hamburger-icon.png' onClick={() => {setShow(true); start()}}/>
+            <img id='hamburger-icon' src='../assets/hamburger-icon.png' alt='hamburger-icon' onClick={() => {setShow(true); start()}}/>
         </header>
 
         <div className="content-background">
@@ -42,10 +42,10 @@ export const Payment = () => {
             <h2 className="other-title payment-title">Velg betalingsløsning</h2>
             <Link id="test2" to='OrderComplete'>
               <div className="payment-option-box">
-                <img id="payment-pic" src='vipps.png'></img>
+                <img id="payment-pic" src='vipps.png' alt='vipps-logo'></img>
               </div>
               <div className="payment-option-box">
-                <img id="payment-pic" src='mastercard.jpg'></img>
+                <img id="payment-pic" src='mastercard.jpg' alt='mastercard-logo'></img>
               </div>
             </Link>
           </div>
