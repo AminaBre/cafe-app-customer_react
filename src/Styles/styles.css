@@ -125,20 +125,14 @@ h1 {
   background-color: rgb(255, 255, 255);
   color: #444;
   cursor: pointer;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 15px;
   box-shadow: 2px 2px 6px 0 rgb(134, 145, 140);
 }
 
 .expander-title
 .active {
   background-color: #fff;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-radius: 15px;
 
 
 }
