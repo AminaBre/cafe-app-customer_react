@@ -30,7 +30,7 @@ export const OrderHistory = () => {
         </div>
 
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
-          Kafé Judas
+          Ordrehistorikk
         </Link>
         <Link to='/FrontPage/FrontPage' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />

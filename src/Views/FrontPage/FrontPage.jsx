@@ -41,7 +41,7 @@ const MainMenu = () => {
         </div>
 
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
-          Kafé Judas
+          Kafé HK
         </Link>
         
           <Modal show={show} close={closeModalHandler}/>   

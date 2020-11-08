@@ -47,7 +47,9 @@ export const Contact = () => {
             <h3 className="info-txt">cafe@cafe.com </h3>
               <img id='telephone-icon' src='../assets/icons/telephone-icon.png' />
               <img id='mail-icon' src='../assets/icons/mail-icon.png' />
-            <h3 className="map-txt">Hvor holder vi til?</h3>
+              <div className="other-container">
+                <h3 className="other-title map-txt">Hvor holder vi til?</h3>
+             </div>
           <img id='map-img' src='../assets/icons/map.jpg' />
         </div>
         </div>

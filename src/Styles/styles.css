@@ -36,7 +36,7 @@ h1 {
 
 /* Cursive Font */
 .font-cursive {
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Header */
@@ -58,8 +58,8 @@ h1 {
 
 #header-title {
   position: relative;
-  margin: 1.3rem auto;
-  font-size: 38px;
+  margin: 1.5rem auto;
+  font-size: 32px;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 1px black;
   text-decoration: none;
@@ -483,17 +483,17 @@ input {
 #telephone-icon {
   opacity: 1;
   position: absolute;
-  width: 3.4rem;
+  width: 3rem;
   z-index: 3;
   margin: 1rem;
-  top: 1rem;
+  top: 1.5rem;
   
 }
 
 #mail-icon {
   opacity: 1;
   position: absolute;
-  width: 3.4rem;
+  width: 3rem;
   z-index: 3;
   margin: 1rem;
   top: 5.5rem;
@@ -529,6 +529,7 @@ input {
   text-align: center;
   position: relative;
   top: 2.3rem;
+  color: white;
 }
 
 #countdown {
