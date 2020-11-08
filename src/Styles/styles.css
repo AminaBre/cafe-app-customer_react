@@ -454,14 +454,15 @@ input {
 /* CONTACT PAGE */
 .contact-form-container {
   height: 100vh;
+  background-color: rgba(142, 156, 149);
 }
 
 
 .contact-form {
-  background-color: rgba(255, 255, 255, 0.518);
+  background-color: rgba(82, 94, 89, 0.62);
   display: flex;
-  width: 19rem;
-  height: 12rem;
+  width: 20rem;
+  height: 40rem;
   flex-direction: column;
   margin: 0rem auto;
   position: relative;
@@ -491,7 +492,7 @@ input {
 
 .cafe-map {
 
-  background-color: rgba(255, 255, 255, 0.518);
+  background-color: rgba(142, 156, 149);
   display: flex;
   width: 19rem;
   height: 14rem;
@@ -503,14 +504,15 @@ input {
 #map-img {
   opacity: 1;
   position: absolute;
-  width: 18rem;
+  width: 20rem;
   z-index: 3;
-  margin: 0.5rem;
-  top: 3rem;
+  top: 20rem;
 }
 
 .map-txt {
   text-align: center;
+  top: 8rem;
+  position: relative;
 }
 
 .info-txt {

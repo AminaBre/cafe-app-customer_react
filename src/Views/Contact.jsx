@@ -29,7 +29,7 @@ export const Contact = () => {
         </div>
 
         <Link to='/FrontPage/FrontPage' h1 id='header-title' className='font-cursive' onClick={start}>
-          Kafé Judas
+          Kontakt oss
         </Link>
         <Link to='/FrontPage/FrontPage' onClick={start}>
           <img id='back-arrow-icon' src='../assets/back-arrow.png' />
@@ -44,11 +44,9 @@ export const Contact = () => {
           <div class="contact-form-container texture-background">
             <div class="contact-form">
             <h3 className="info-txt">40644715</h3>
-            <h3 className="info-txt">cafe@judas.com </h3>
+            <h3 className="info-txt">cafe@cafe.com </h3>
               <img id='telephone-icon' src='../assets/icons/telephone-icon.png' />
               <img id='mail-icon' src='../assets/icons/mail-icon.png' />
-            </div>
-          <div class="cafe-map">
             <h3 className="map-txt">Hvor holder vi til?</h3>
           <img id='map-img' src='../assets/icons/map.jpg' />
         </div>
