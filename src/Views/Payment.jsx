@@ -40,9 +40,16 @@ export const Payment = () => {
 
       </header>
 
-      <Link to='OrderComplete'>
-       <div>Bekreft betaling</div>
-      </Link>
+      <div id="test">
+          <p id="payment-txt">Velg betalingsløsning</p>
+          <img id="vipps-pic" src='vipps.png'></img>
+          <img id="bank-pic" src='mastercard.png'></img>
+          <Link to='OrderComplete'>
+          <button className="pay-now">Bekreft kjøp</button>
+          </Link>
+      </div>
+
+    
       
     
         </>

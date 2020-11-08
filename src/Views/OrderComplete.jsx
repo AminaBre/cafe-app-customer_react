@@ -5,6 +5,8 @@ import Shoppingcart from './Shoppingcart';
 import '../Styles/styles.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Modal } from '../Modal';
+import Expander from '../Components/Expander';
+import Timer from '../Views/timer';
 
 export const OrderComplete = () => {
 
@@ -20,6 +22,9 @@ export const OrderComplete = () => {
   }
 
     return(
+
+        
+        
 
         <>
 
@@ -40,11 +45,30 @@ export const OrderComplete = () => {
 
       </header>
 
-        <Link to= '/OrderHistory' onClick={start}>
-        <button className="pay-now" onClick={() => setIsOpen(true)}>
-         Se min ordrehistorikk
-        </button>
-        </Link>
+      <div id="order-details">
+          <h1 id="order-details-header">Ordredetaljer</h1>
+          <p id="order-details-text">1 Cappuchino (liten)</p>
+          <p id="order-details-text">1 Brownie</p>
+          <div id="countdown"><Timer></Timer></div>
+      </div>
+
+
+        <Expander title="Din ordrehistorikk" >
+            <div className="order-hisory">
+                <h3>2020 - 11 - 06</h3>
+                <p>Kaffe (liten)</p>
+            </div>
+            <div className="order-hisory">
+                <h3>2020 - 10 - 07</h3>
+                <p>Brownie</p>
+            </div>
+            <div className="order-hisory">
+                <h3>2020 - 09 - 01</h3>
+                <p>Americano (Stor)</p>
+            </div>
+         </Expander>
+
+         
       
     
         </>
