@@ -65,43 +65,43 @@ const Beverage = (props) => {
   };
 
   return (
-  <Expander title={props.type.id} icon={props.type.icon} >
-    <div className='expander-text'>
-    <img 
-    className="product-image"
-    src={props.type.img} 
-    alt={props.type.id}/>
-    {
-          props.type.size.map((item) => {
-            return (
-              <div className="size-buttons-container">
-                <span 
-                  onClick={() => {
-                    removeFromBasket(item);
-                  }}
-                  className={'button minus-button'}
-                >
-                  -
-                </span>
-                <span className="number-of-items">{getNrOrderOf(item)}</span>
-                <span 
-                  onClick={() => {
-                    addToBasket(item);
-                  }}
-                  className={'button plus-button'}
-                >
-                  +
-                </span>
-                <span>
-                  {`  ${item.storlek}: `}<strong>{item.price}</strong>{`,-`}
-                </span>
-              </div>
-            );
-          })
-    }</div>
-  </Expander>
-  );
-};
+    <Expander title={props.type.id} icon={props.type.icon} >
+      <div className='expander-text'>
+      <img 
+      className="product-image"
+      src={props.type.img} 
+      alt={props.type.id}/>
+      {
+            props.type.size.map((item) => {
+              return (
+                <div className="size-buttons-container">
+                  <span 
+                    onClick={() => {
+                      removeFromBasket(item);
+                    }}
+                    className={'button minus-button'}
+                  >
+                    -
+                  </span>
+                  <span className="number-of-items">{getNrOrderOf(item)}</span>
+                  <span 
+                    onClick={() => {
+                      addToBasket(item);
+                    }}
+                    className={'button plus-button'}
+                  >
+                    +
+                  </span>
+                  <span>
+                    {`  ${item.storlek}: `}<strong>{item.price}</strong>{`,-`}
+                  </span>
+                </div>
+              );
+            })
+      }</div>
+    </Expander>
+    );
+  };
 
 export default Beverage;
 
