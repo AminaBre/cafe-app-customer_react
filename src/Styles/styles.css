@@ -153,8 +153,7 @@ h1 {
   background-color: #fff;
   overflow: hidden;
   transition: max-height 0.6s ease;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 15px;
 }
 
 .expander-text {
