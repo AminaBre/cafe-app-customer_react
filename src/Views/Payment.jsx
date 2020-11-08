@@ -42,11 +42,12 @@ export const Payment = () => {
 
       <div id="test">
           <p id="payment-txt">Velg betalingsløsning</p>
+          <Link id="test2" to='OrderComplete'>
           <img id="vipps-pic" src='vipps.png'></img>
           <img id="bank-pic" src='mastercard.png'></img>
-          <Link to='OrderComplete'>
-          <button className="pay-now">Bekreft kjøp</button>
           </Link>
+         
+        
       </div>
 
     

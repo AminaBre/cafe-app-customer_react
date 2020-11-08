@@ -79,6 +79,13 @@ export const Shoppingcart2 = (props) => {
     handleKurv.setProducts(newProducts);
   };
 
+  const addExtra = () => {
+    let cart = document.getElementById("all-shopping-cart-outputs");
+    let newProduct = "<div class='shopping-cart-output-container'>Du har lagt til en croissant<br/> Pris per: 40 </div>"
+    cart.innerHTML += newProduct;
+    
+  }
+
   const orderList = Object.keys(handleKurv.products).map(
     (product) =>
       Object.keys(handleKurv.products[product]).map((size) => (
@@ -109,11 +116,14 @@ export const Shoppingcart2 = (props) => {
           </div>
         </div>
       ))
+      );
+
+      
     // product.map((size) => {
     //   console.log(size);
     //   console.log(product);
     // });
-  );
+  
 
   //   <li key={`${order.id}-${order.size}`}>{<OrderCard data={order} />}</li>
 
@@ -158,8 +168,8 @@ export const Shoppingcart2 = (props) => {
 
         <div className='other-cart-container'>
             <h4 className='cart-title'>Noe ekstra?</h4>
-            <img className='extras-img' src={desserts[3].img} alt={desserts[3].id}/>
-            <img className='extras-img' src={desserts[6].img} alt={desserts[6].id}/>
+            <img onClick={addExtra} className='extras-img' src={desserts[3].img} alt={desserts[3].id}></img>
+            <img className='extras-img' src={desserts[6].img} alt={desserts[6].id}></img>
           </div>
           <div className='other-cart-container'>
             <h4 className='cart-title'>Kommentar til bestillingen?</h4>
@@ -176,11 +186,6 @@ export const Shoppingcart2 = (props) => {
           }
         </div>
 
-        <Link to= '/Payment' onClick={start}>
-        <button className="pay-now" onClick={() => setIsOpen(true)}>
-          Bekreft min ordre
-        </button>
-        </Link>
         <Modal open={isOpen}>Hvordan ønsker du å betale?</Modal>
       
 
